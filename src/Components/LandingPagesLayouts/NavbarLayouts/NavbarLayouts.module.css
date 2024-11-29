@@ -1,0 +1,105 @@
+.NavbarLayoutsContainers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.NavbarLayoutsContainerLists {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 60px 0px 60px;
+    justify-content: space-between;
+}
+
+.NavbarLayoutsImage {
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+}
+
+.NavbarLayoutsItemsLists {
+    gap: 20px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+}
+
+.NavbarLayoutsA {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.NavbarLayoutsA:hover,
+.NavbarLayoutsA.active {
+    background-color: #2E318D;
+    color: white;
+}
+
+.NavbarLayoutsItems {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.NavbarLayoutsIconMeun {
+    height: 24px;
+    cursor: pointer;
+}
+
+.NavbarLayoutsMeunH6 {
+    color: white;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+.NavbarLayoutsSlish {
+    color: white;
+}
+
+.MobileMenuToggle {
+    display: none;
+    cursor: pointer;
+}
+
+.CloseIcon,
+.HamburgerIcon {
+    color: white;
+    font-size: 30px;
+}
+
+.MobileMenuOpen {
+    display: flex !important;
+}
+
+@media (max-width: 768px) {
+    .NavbarLayoutsContainerLists {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .NavbarLayoutsItemsLists {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        background-color: black;
+        padding: 10px 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .MobileMenuToggle {
+        display: block;
+    }
+}
