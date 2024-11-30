@@ -1,0 +1,102 @@
+.FootersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+}
+
+.FootersContainers {
+    gap: 200PX;
+    display: flex;
+    padding: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000;
+    justify-content: space-between;
+}
+
+.FootersList {
+    gap: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FootersCompanyImg {
+    cursor: pointer;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.FootersItemsH4 {
+    color: #F5C350;
+    font-family: Inter;
+    font-size: 20.167px;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 26.667px;
+    letter-spacing: 0.64px;
+}
+
+.FooterDivs {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.FooterDivsImgs {
+    cursor: pointer;
+}
+
+.FootersItems {
+    gap: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.FootersItemsUL {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.FooterItemsLI a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 19.5px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: Inter;
+    text-decoration: none;
+    line-height: 26.667px;
+    letter-spacing: 0.64px;
+    color: rgba(245, 195, 80, 0.90);
+}
+
+.FooterLasts {
+    gap: 90px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    align-self: flex-end;
+    justify-self: flex-end;
+    border-top: 1px solid rgba(245, 195, 80, 0.15);
+}

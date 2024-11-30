@@ -1,0 +1,67 @@
+.HeaderLayoutsContainer {
+    margin-top: 70px;
+    gap: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.HeaderLayoutsImage {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+    background-color: brown;
+}
+
+
+
+
+
+
+
+/* Animation for scrolling left */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Animation for scrolling right */
+@keyframes scrollRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Images moving left */
+.ScrollLeft {
+    animation: scrollLeft 10s linear infinite;
+}
+
+/* Images moving right */
+.ScrollRight {
+    animation: scrollRight 10s linear infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .HeaderTitle {
+        font-size: 1.5rem;
+    }
+
+    .HeaderLayoutsImage {
+        height: 80px;
+    }
+}
