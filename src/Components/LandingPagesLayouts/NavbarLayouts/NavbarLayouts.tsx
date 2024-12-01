@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { IoIosCloseCircle } from "react-icons/io";
-import BugarMeun from "../../../assets/BugarMeun.svg";
 import { FiMenu } from "react-icons/fi";
+import BugarMeun from "../../../assets/BugarMeun.svg";
 import SearchIcon from "../../../assets/SearchIcon.svg";
 import Drumrollogo from "../../../assets/Drumrollogo.svg";
 import Styles from "./NavbarLayouts.module.css";
@@ -25,15 +26,24 @@ export const NavbarLayouts: React.FC = () => {
             <div className={Styles.NavbarLayoutsContainerLists}>
                 <img src={Drumrollogo} alt="Drumroll logo" className={Styles.NavbarLayoutsImage} />
                 <div className={Styles.MobileMenuToggle} onClick={toggleMobileMenu}>
-                    {isMobileMenuOpen ? (<IoIosCloseCircle className={Styles.CloseIcon} />) : (
+                    {isMobileMenuOpen ? (
+                        <IoIosCloseCircle className={Styles.CloseIcon} />
+                    ) : (
                         <FiMenu className={Styles.HamburgerIcon} />
                     )}
                 </div>
-                <ul className={`${Styles.NavbarLayoutsItemsLists} ${isMobileMenuOpen ? Styles.MobileMenuOpen : ""}`}>
+                <ul
+                    className={`${Styles.NavbarLayoutsItemsLists} ${isMobileMenuOpen ? Styles.MobileMenuOpen : ""
+                        }`}
+                >
                     {["Home", "Service", "Work"].map((link) => (
-                        <li key={link} className={`${Styles.NavbarLayoutsA} ${activeLink === link ? Styles.active : ""}`}
-                            onClick={() => handleLinkClick(link)} >
-                            <a href="#">{link}</a>
+                        <li
+                            key={link}
+                            className={`${Styles.NavbarLayoutsA} ${activeLink === link ? Styles.active : ""
+                                }`}
+                            onClick={() => handleLinkClick(link)}
+                        >
+                            <Link to={`/${link.toLowerCase()}`}>{link}</Link>
                         </li>
                     ))}
                 </ul>

@@ -13,3 +13,5 @@ export const WorkComponet: React.FC = () => {
         </div>
     )
 }
+
+export default WorkComponet;

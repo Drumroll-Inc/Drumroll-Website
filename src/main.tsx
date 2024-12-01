@@ -1,6 +1,9 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/LandingPasges/LandingPasges";
+import Work from "./Components/WorkComponets/WorkComponet/WorkComponet";
+import Service from "./Components/ServiceComponets/ServiceComponet/ServiceComponet";
 import App from "./App.tsx";
 import "./index.css";
 
@@ -14,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <Router>
           <Routes>
             <Route path="/" element={<App />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/service" element={<Service />} />
           </Routes>
         </Router>
       </React.StrictMode>
