@@ -1,0 +1,167 @@
+.ServiceHeadersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+    overflow-y: auto;
+    align-items: center;
+    scroll-behavior: smooth;
+    justify-content: center;
+}
+
+.ServiceHeadersChildOne {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    background-size: cover;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url(../../../../assets/ImageSlider1.svg);
+}
+
+.ServiceHeadersChildTwo {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    background-size: cover;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url(../../../../assets/ImageSlider2.svg);
+}
+
+.ServiceHeadersChildThree {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    background-size: cover;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url(../../../../assets/ImageSlide3.svg);
+}
+
+.ServiceHeadersChildListOne {
+    gap: 20px;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35%;
+    flex-direction: column;
+}
+
+.ServiceHeadersH1 {
+    color: #FFF;
+    width: 700px;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 60px;
+    font-style: normal;
+    font-family: Inter;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+}
+
+.ServiceHeadersButtonPara {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ServiceHeadersBTC {
+    width: 120px;
+    height: 40px;
+    outline: none;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: solid 2px #FFFFFF;
+    color: rgba(0, 0, 0, 0.852);
+}
+
+.ServiceHeadersParas {
+    width: 820px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    font-family: Inter;
+    font-style: normal;
+    letter-spacing: 0.64px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+
+.ServiceHeaderItems {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ServiceHeaderItemsH4 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    font-style: normal;
+    font-family: Inter;
+    color: rgba(255, 255, 255, 0.693);
+}
+
+.ServiceHeaderItemsLists {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ServiceHeaderItemsLists1 {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.svgIcons {
+    width: 40px;
+}
+
+.ServiceHeaderItemsListsH4 {
+    width: 130px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 130%;
+    font-family: Inter;
+    font-style: normal;
+    letter-spacing: 0.64px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.ServiceHeadersChildWrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.ServiceHeadersChildWrapper.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ServiceHeadersChildWrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+}

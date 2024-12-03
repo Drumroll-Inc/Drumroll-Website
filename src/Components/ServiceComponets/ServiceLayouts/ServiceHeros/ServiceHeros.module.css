@@ -1,0 +1,62 @@
+.ServiceHerosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.906);
+}
+
+.ServiceHerosChildOne {
+    gap: 20px;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ServiceHerosChilds {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ServiceHerosH1 {
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.ServiceHerosH2 {
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.ServiceHerosParagraph {
+    width: 850px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 100;
+    color: #FFFFFF99;
+}
+
+.ServiceHerosChildTwo {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
+.ServiceHeroImages {
+    width: 300px;
+}

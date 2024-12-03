@@ -1,9 +1,11 @@
 .HeroLayoutsContainer {
     display: flex;
     flex-wrap: wrap;
+    overflow-y: scroll;
     align-items: center;
     flex-direction: row;
     justify-content: center;
+    scroll-behavior: smooth;
     background-color: #2E318D;
 }
 
@@ -27,8 +29,9 @@
 
 .HeroLayoutH1 {
     font-size: 100px;
-    font-style: normal;
     font-weight: 900;
+    cursor: pointer;
+    font-style: normal;
     line-height: 307.2px;
     letter-spacing: -6.693px;
     text-transform: uppercase;
@@ -37,10 +40,24 @@
 }
 
 .HeroLayoutsListItems {
+    gap: 0;
     width: 500px;
-    height: 498px;
+    height: 430px;
+    cursor: pointer;
     flex-shrink: 0;
-    background-color: aqua;
+    display: flex;
+    position: relative;
+    overflow-y: scroll;
+    flex-direction: column;
+    scrollbar-width: thin;
+    border: 5px solid #ffffff;
+    scrollbar-color: #ffffff #0000ff;
+}
+
+.HeroLayoutImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .HeroLayoutsImageDiv {

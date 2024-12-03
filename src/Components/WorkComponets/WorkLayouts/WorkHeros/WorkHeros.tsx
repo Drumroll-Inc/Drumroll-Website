@@ -5,9 +5,10 @@ import Styles from "./WorkHeros.module.css";
 
 
 export const WorkHeros: React.FC = () => {
+    const scrollToSection = () => { };
     return (
         <>
-            <Navbar />
+            <Navbar scrollToSection={scrollToSection} />
             <div className={Styles.WorkHerosContainer}>
                 <div className={Styles.WorkHerosContainerListOne}>
                     <h1 className={Styles.WorkHerosH1}>By Zara</h1>
