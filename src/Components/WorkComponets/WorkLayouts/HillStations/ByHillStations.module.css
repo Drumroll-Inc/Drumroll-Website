@@ -1,0 +1,315 @@
+.WorkHerosContainer {
+    gap: 6px;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.906);
+}
+
+.WorkHerosContainerListOne {
+    gap: 5px;
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.WorkHerosH1 {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+    font-style: normal;
+    font-family: Inter;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.WorkHerosParagrph {
+    flex: 1 0 0;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    font-family: Inter;
+    font-style: normal;
+    align-self: flex-start;
+    letter-spacing: 0.64px;
+}
+
+.WorkHerosNavList {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.WorkHerosNavListItem {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.WorkHerosNav {
+    flex: 1 0 0;
+    width: 120px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 130%;
+    font-family: Inter;
+    text-align: center;
+    font-style: normal;
+    border-radius: 20px;
+    letter-spacing: 0.64px;
+    background-color: rgba(255, 255, 255, 0.70);
+    border-radius: solid 15px rgba(255, 255, 255, 0.70);
+}
+
+.WorkHerosNavSingle {
+    flex: 1 0 0;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 130%;
+    max-width: 120px;
+    font-family: Inter;
+    text-align: center;
+    font-style: normal;
+    border-radius: 20px;
+    letter-spacing: 0.64px;
+    background-color: rgba(255, 255, 255, 0.70);
+    border-radius: solid 15px rgba(255, 255, 255, 0.70);
+}
+
+
+
+
+
+
+
+
+
+.WorkHerosContainerListTwo {
+    width: 76%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.WorkHerosImageOne {
+    width: 100%;
+    height: 745px;
+    cursor: pointer;
+    background-size: cover;
+    background-size: contain;
+    background-image: url(../../../../assets/Image1.svg);
+}
+
+.WorkHerosImageTwo {
+    width: 100%;
+    height: 626px;
+    cursor: pointer;
+    background-size: cover;
+    background-size: contain;
+    background-image: url(../../../../assets/Image2.svg);
+}
+
+.WorkHerosImageThree {
+    width: 100%;
+    height: 744px;
+    cursor: pointer;
+    background-size: cover;
+    background-size: contain;
+    background-image: url(../../../../assets/Image3.svg);
+}
+
+.WorkHerosImageFour {
+    width: 100%;
+    height: 742px;
+    cursor: pointer;
+    background-size: cover;
+    background-size: contain;
+    background-image: url(../../../../assets/BusIcon.svg);
+}
+
+.WorkHerosImageFive {
+    width: 100%;
+    height: 742px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(245, 245, 245, 0.937);
+}
+
+.WorkHerosImageSix {
+    width: 100%;
+    height: 742px;
+    cursor: pointer;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgb(119, 119, 30);
+}
+
+.WorkHerosImageSeven {
+    width: 100%;
+    height: 742px;
+    cursor: pointer;
+    margin-top: 18px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(0, 0, 255, 0.953);
+}
+
+.WorkHerosImageEight {
+    width: 100%;
+    height: 742px;
+    cursor: pointer;
+    margin-top: 18px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(245, 245, 245, 0.564);
+}
+
+.WorkHerosImageNine {
+    width: 100%;
+    height: 742px;
+    cursor: pointer;
+    margin-top: 18px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(245, 245, 245, 0.564);
+}
+
+.WorkHerosImageTen {
+    width: 100%;
+    height: 742px;
+    cursor: pointer;
+    margin-top: 18px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(245, 245, 245, 0.937);
+}
+
+
+
+
+
+
+
+
+
+.WorkHerosDivsImages {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding-top: 18px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.DivImagesOne {
+    width: 49%;
+    height: 680px;
+    background-size: cover;
+    background-size: contain;
+    background-image: url(../../../../assets/Images1.svg);
+}
+
+.DivImagesTwo {
+    width: 49%;
+    height: 680px;
+    background-size: cover;
+    background-size: contain;
+    background-image: url(../../../../assets/Images2.svg);
+}
+
+.DivImagesBackgroundOne {
+    width: 49%;
+    height: 680px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(245, 245, 245, 0.973);
+}
+
+.DivImagesBackgroundTwo {
+    width: 49%;
+    height: 680px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(245, 245, 245, 0.564);
+}
+
+.DivImagesBackgroundThree {
+    width: 49%;
+    height: 680px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(245, 245, 245, 0.564);
+}
+
+.DivImagesBackgroundFour {
+    width: 49%;
+    height: 680px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(245, 245, 245, 0.564);
+}
+
+.DivImagesBackgroundFive {
+    width: 49%;
+    height: 680px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(245, 245, 245, 0.564);
+}
+
+.DivImagesBackgroundSix {
+    width: 49%;
+    height: 680px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(245, 245, 245, 0.973);
+}
+
+
+
+
+
+
+
+.WorkHerosImageParagraph {
+    color: #FFF;
+    width: 750px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 25px;
+    text-align: center;
+    font-style: normal;
+    font-family: Inter;
+    text-transform: uppercase;
+}

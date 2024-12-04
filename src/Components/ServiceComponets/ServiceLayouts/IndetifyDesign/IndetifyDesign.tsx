@@ -3,6 +3,7 @@ import Icon1 from "../../../../assets/Icon1.svg";
 import Icon2 from "../../../../assets/Icon2.svg";
 import Icon3 from "../../../../assets/Icon3.svg";
 import Icon4 from "../../../../assets/Icon4.svg";
+import ServiceHeros from "../ServiceHeros/ServiceHeros";
 import Footers from "../../../LandingPagesLayouts/Footers/Footers";
 import NavbarLayouts from "../../../LandingPagesLayouts/NavbarLayouts/NavbarLayouts";
 import Styles from "./IndetifyDesign.module.css";
@@ -46,6 +47,7 @@ export const IndetifyDesign: React.FC = () => {
                     </div>
                 </div>
             </div>
+            <ServiceHeros />
             <Footers />
         </>
     )

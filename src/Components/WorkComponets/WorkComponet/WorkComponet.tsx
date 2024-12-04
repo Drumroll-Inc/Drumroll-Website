@@ -1,17 +1,53 @@
 import React from "react";
-import WorkHeros from "../WorkLayouts/WorkHeros/WorkHeros";
-import WorkHeaders from "../WorkLayouts/WorkHeaders/WorkHeaders";
+import { useNavigate } from "react-router-dom";
+import Footers from "../../LandingPagesLayouts/Footers/Footers";
+import NavbarLayouts from "../../LandingPagesLayouts/NavbarLayouts/NavbarLayouts";
 import Styles from "./WorkComponet.module.css";
 
 
-
 export const WorkComponet: React.FC = () => {
+    const navigate = useNavigate();
+
+    const handleImageClick = (path: string) => {
+        navigate(path);
+    };
+
     return (
-        <div className={Styles.WorkComponetContainer}>
-            <WorkHeaders />
-            <WorkHeros />
-        </div>
-    )
-}
+        <>
+            <NavbarLayouts />
+            <div className={Styles.WorkComponetContainer}>
+                <div className={Styles.WorkHerosContainerListOne}>
+                    <h1 className={Styles.WorkHerosH1}>Our Works</h1>
+                    <p className={Styles.WorkHerosParagrph}>Tagline/ description goes here</p>
+                    <div className={Styles.WorkHerosNavList}>
+                        <div className={Styles.WorkHerosNavListItem}>
+                            <nav className={Styles.WorkHerosNav}>Brand Identity</nav>
+                            <nav className={Styles.WorkHerosNav}>Strategy</nav>
+                        </div>
+                        <div className={Styles.WorkHerosNavListItem}>
+                            <nav className={Styles.WorkHerosNav}>Packaging</nav>
+                            <nav className={Styles.WorkHerosNav}>Motion Graphics</nav>
+                        </div>
+                        <nav className={Styles.WorkHerosNavSingle}>Photography</nav>
+                    </div>
+                </div>
+                <div className={Styles.WorkHerosContainerListTwo}>
+                    <div
+                        className={Styles.WorkHerosImages1}
+                        onClick={() => handleImageClick("/ByZaraIWorks")}
+                    ></div>
+                    <div className={Styles.WorkHerosImages2}></div>
+                    <div className={Styles.WorkHerosImages3}></div>
+                    <div className={Styles.WorkHerosImages4}></div>
+                    <div className={Styles.WorkHerosImages5}></div>
+                    <div className={Styles.WorkHerosImages6}></div>
+                    <div className={Styles.WorkHerosImages7}></div>
+                    <div className={Styles.WorkHerosImages8}></div>
+                </div>
+            </div>
+            <Footers />
+        </>
+    );
+};
 
 export default WorkComponet;

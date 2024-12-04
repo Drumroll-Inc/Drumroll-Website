@@ -1,6 +1,7 @@
 .ServiceHerosContainer {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -52,6 +53,7 @@
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     align-items: center;
     padding-bottom: 40px;
     justify-content: center;
@@ -59,4 +61,78 @@
 
 .ServiceHeroImages {
     width: 300px;
+    height: auto;
+    cursor: pointer;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.SliderContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.ActiveImage {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.ImageSlider {
+    gap: 20px;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
+}
+
+.ImageSlider::-webkit-scrollbar {
+    display: none;
+}
+
+.SliderButtons {
+    gap: 10px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.SliderButtons {
+    display: flex;
+    width: 120px;
+    height: 30px;
+    margin: 10px auto 0;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+    background-color: rgba(245, 245, 245, 0.911);
+}
+
+.SliderButton {
+    color: #000;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    border: solid 5px rgba(245, 245, 245, 0.911);
+    background-color: rgba(245, 245, 245, 0.911);
+}
+
+.SliderButton:hover {
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    color: rgba(245, 245, 245, 0.911);
 }

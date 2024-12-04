@@ -22,7 +22,9 @@ export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection })
         setActiveLink(linkName);
         setIsMobileMenuOpen(false);
 
-        if (location.pathname !== "/") {
+        if (linkName === "Work") {
+            navigate("/WorkComponet");
+        } else if (location.pathname !== "/") {
             navigate(`/?section=${linkName}`);
         } else if (scrollToSection) {
             scrollToSection(linkName);

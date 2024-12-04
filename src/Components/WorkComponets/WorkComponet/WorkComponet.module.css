@@ -1,0 +1,138 @@
+.WorkComponetContainer {
+    gap: 20px;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    padding-top: 180px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.906);
+}
+
+.WorkHerosContainerListOne {
+    gap: 5px;
+    width: 270px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.WorkHerosH1 {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 60px;
+    font-style: normal;
+    font-family: Inter;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.WorkHerosParagrph {
+    flex: 1 0 0;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 130%;
+    font-family: Inter;
+    font-style: normal;
+    align-self: flex-start;
+    letter-spacing: 0.64px;
+}
+
+.WorkHerosNavList {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.WorkHerosNavListItem {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.WorkHerosNav {
+    flex: 1 0 0;
+    width: 120px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 130%;
+    font-family: Inter;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    letter-spacing: 0.64px;
+    background-color: rgba(255, 255, 255, 0.70);
+    border-radius: solid 15px rgba(255, 255, 255, 0.70);
+}
+
+.WorkHerosNavSingle {
+    flex: 1 0 0;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 130%;
+    max-width: 120px;
+    font-family: Inter;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    letter-spacing: 0.64px;
+    background-color: rgba(255, 255, 255, 0.70);
+    border-radius: solid 15px rgba(255, 255, 255, 0.70);
+}
+
+.WorkHerosContainerListTwo {
+    gap: 30px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    max-width: 970px;
+    align-items: center;
+    justify-content: center;
+}
+
+.WorkHerosImages1 {
+    width: 470px;
+    height: 450px;
+    background-size: cover;
+    background-size: contain;
+    background-color: rgba(240, 248, 255, 0.88);
+    background-image: url(../../../assets/Image2.svg);
+}
+
+.WorkHerosImages2 {
+    width: 470px;
+    height: 450px;
+    background-color: rgba(240, 248, 255, 0.88);
+}
+
+.WorkHerosImages3 {
+    width: 470px;
+    height: 450px;
+    background-color: rgba(240, 248, 255, 0.88);
+}
+
+.WorkHerosImages4 {
+    width: 470px;
+    height: 450px;
+    background-color: rgba(240, 248, 255, 0.88);
+}
