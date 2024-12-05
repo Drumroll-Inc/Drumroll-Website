@@ -21,14 +21,14 @@ export const WorkComponet: React.FC = () => {
                     <p className={Styles.WorkHerosParagrph}>Tagline/ description goes here</p>
                     <div className={Styles.WorkHerosNavList}>
                         <div className={Styles.WorkHerosNavListItem}>
+                            <nav className={Styles.WorkHerosNav}>All Projects</nav>
                             <nav className={Styles.WorkHerosNav}>Brand Identity</nav>
-                            <nav className={Styles.WorkHerosNav}>Strategy</nav>
                         </div>
                         <div className={Styles.WorkHerosNavListItem}>
+                            <nav className={Styles.WorkHerosNav}>Content Strategy</nav>
                             <nav className={Styles.WorkHerosNav}>Packaging</nav>
-                            <nav className={Styles.WorkHerosNav}>Motion Graphics</nav>
                         </div>
-                        <nav className={Styles.WorkHerosNavSingle}>Photography</nav>
+                        <nav className={Styles.WorkHerosNavSingle}>Digital Development</nav>
                     </div>
                 </div>
                 <div className={Styles.WorkHerosContainerListTwo}>
