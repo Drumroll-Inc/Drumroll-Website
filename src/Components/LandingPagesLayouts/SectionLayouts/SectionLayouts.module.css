@@ -77,3 +77,35 @@
     font-family: Inter;
     line-height: 20.561px;
 }
+
+@media screen and (max-width: 768px) {
+    .SectionLayoutsContainer {
+        padding: 50px;
+    }
+
+    .SectionLayoutsMain1 {
+        cursor: pointer;
+        font-size: 30px;
+        line-height: 60.137px;
+    }
+
+    .SectionLayoutsParagraph {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 40px;
+    }
+
+    .SectionLayoutsMain2 {
+        gap: 20px;
+        padding: 0px;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+
+    .CardsImages {
+        height: 550px;
+        cursor: pointer;
+    }
+}

@@ -81,6 +81,10 @@
     border-radius: solid 15px rgba(255, 255, 255, 0.70);
 }
 
+.WorkHerosNav:hover {
+    background-color: rgba(0, 0, 255, 0.91);
+}
+
 .WorkHerosNavSingle {
     flex: 1 0 0;
     padding: 5px;
@@ -115,7 +119,6 @@
     height: 450px;
     background-size: cover;
     background-size: contain;
-    background-color: rgba(240, 248, 255, 0.88);
     background-image: url(../../../assets/Image2.svg);
 }
 

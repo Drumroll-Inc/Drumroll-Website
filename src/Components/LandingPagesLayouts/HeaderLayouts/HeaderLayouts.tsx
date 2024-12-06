@@ -1,18 +1,28 @@
 import React from "react";
-import TopScrolLeft from "../../../assets/TopScrolLeft.svg";
-import ButtonScrollLeft from "../../../assets/ButtonScrollLeft.svg";
-import CentreScrollRight from "../../../assets/CentreScrollRight.svg";
 import Styles from "./HeaderLayouts.module.css";
 
 
 export const HeaderLayouts: React.FC = () => {
     return (
         <div className={Styles.HeaderLayoutsContainer}>
-            <img src={TopScrolLeft} alt="Icon scroll letf" className={Styles.HeaderLayoutsImage} />
-            <img src={CentreScrollRight} alt="Icon scroll right" className={Styles.HeaderLayoutsImage} />
-            <img src={ButtonScrollLeft} alt="Icon scroll left" className={Styles.HeaderLayoutsImage} />
+            <div className={Styles.HeaderLayoutsVideoContainer}>
+                <video autoPlay loop muted
+                    className={`${Styles.HeaderLayoutsVideo} ${Styles.DesktopOnly}`}>
+                    <source src="/Streams/WebVersion.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <video autoPlay loop muted
+                    className={`${Styles.HeaderLayoutsVideo} ${Styles.MobileOnly}`}>
+                    <source src="/Streams/MobileVersion.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div className={Styles.HeaderLayoutsContainer2}>
+                <h1 className={Styles.HeaderLayoutsH1}>DIGITAL SOLUTIONS THAT</h1>
+                <h1 className={Styles.HeaderLayoutsH2}>ROCK</h1>
+            </div>
         </div>
-    )
-}
+    );
+};
 
 export default HeaderLayouts;

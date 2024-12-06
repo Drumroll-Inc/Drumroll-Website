@@ -8,9 +8,9 @@
 }
 
 .FootersContainers {
-    gap: 400px;
+    gap: 460px;
     display: flex;
-    padding: 50px;
+    margin-top: 50px;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
@@ -29,6 +29,7 @@
 }
 
 .FootersCompanyImg {
+    width: 150px;
     cursor: pointer;
     align-self: flex-start;
     justify-self: flex-start;
@@ -37,7 +38,7 @@
 .FootersItemsH4 {
     color: #F5C350;
     font-family: Inter;
-    font-size: 20.167px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
     cursor: pointer;
@@ -80,7 +81,7 @@
 .FooterItemsLI a {
     display: flex;
     flex-wrap: wrap;
-    font-size: 19.5px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
     font-family: Inter;
@@ -92,11 +93,56 @@
 
 .FooterLasts {
     gap: 90px;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
     align-self: flex-end;
     justify-self: flex-end;
     border-top: 1px solid rgba(245, 195, 80, 0.15);
+}
+
+
+@media all and (max-width: 750px) {
+    .FootersContainer {
+        gap: 0px;
+        padding: 50px;
+    }
+
+    .FootersContainers {
+        gap: 0px;
+    }
+
+    .FootersList {
+        gap: 50px;
+    }
+
+    .FootersItems {
+        gap: 60px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: -60px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .FootersContainers {
+        gap: 100px;
+        display: flex;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #000;
+        justify-content: space-between;
+    }
+
+    .FooterLasts {
+        gap: 10px;
+        margin-top: 40px;
+        align-self: flex-start;
+    }
 }

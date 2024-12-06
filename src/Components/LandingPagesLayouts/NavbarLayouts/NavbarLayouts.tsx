@@ -61,7 +61,10 @@ export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection })
                         </li>
                     ))}
                 </ul>
-                <div className={Styles.NavbarLayoutsItems}>
+                <div
+                    className={`${Styles.NavbarLayoutsItems} ${isMobileMenuOpen ? Styles.MobileMenuOpenItems : Styles.HideOnMobile
+                        }`}
+                >
                     <img src={BugarMeun} alt="Icon Menu" className={Styles.NavbarLayoutsIconMeun} />
                     <h6 className={Styles.NavbarLayoutsMeunH6}>Menu</h6>
                     <span className={Styles.NavbarLayoutsSlish}>|</span>
