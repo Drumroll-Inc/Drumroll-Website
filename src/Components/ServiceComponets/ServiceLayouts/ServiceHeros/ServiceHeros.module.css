@@ -136,3 +136,43 @@
     background-color: #444;
     color: rgba(245, 245, 245, 0.911);
 }
+
+
+@media all and (max-width: 750px) {
+
+    .ServiceHerosChilds {
+        gap: 10px;
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    .ServiceHerosH1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .ServiceHerosChildOne {
+        gap: 20px;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ServiceHerosParagraph {
+        width: 90%;
+        font-size: 30px;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .ServiceHeroImages {
+        width: 500px;
+    }
+
+    .SliderContainer {
+        width: 100%;
+        padding-top: 50px;
+    }
+}
