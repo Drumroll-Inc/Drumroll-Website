@@ -111,10 +111,6 @@
 }
 
 
-
-
-
-
 @media all and (max-width: 750px) {
     .ContentDevelopemtsContainer {
         width: 100%;
@@ -155,8 +151,6 @@
         line-height: 40px;
         text-align: center;
     }
-
-
 
     .ContentDevelopemtsParas {
         font-size: 18px;

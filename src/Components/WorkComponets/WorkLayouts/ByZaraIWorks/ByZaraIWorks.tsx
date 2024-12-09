@@ -101,3 +101,99 @@ export const WorkHeaders: React.FC = () => {
 }
 
 export default WorkHeaders;
+
+
+
+
+// import React, { useEffect, useState } from "react";
+// import contentfulClient from "../../../../utils/contentfulClient";
+// import Footers from "../../../LandingPagesLayouts/Footers/Footers";
+// import Navbar from "../../../LandingPagesLayouts/NavbarLayouts/NavbarLayouts";
+// import Styles from "./ByZaraIWorks.module.css";
+
+
+
+// interface WorkHeadersContent {
+//     title: string;
+//     description: string;
+//     challenges: string;
+//     solution: string;
+//     result: string;
+//     services: string[];
+// }
+
+// export const WorkHeaders: React.FC = () => {
+//     const [content, setContent] = useState<WorkHeadersContent | null>(null);
+
+//     useEffect(() => {
+//         const fetchContent = async () => {
+//             try {
+//                 const response = await contentfulClient.getEntries({
+//                     content_type: "workHeaders", // Replace with your Contentful content type ID
+//                 });
+//                 if (response.items.length > 0) {
+//                     const fields = response.items[0].fields;
+//                     setContent({
+//                         title: fields.title as string,
+//                         description: fields.description as string,
+//                         challenges: fields.challenges as string,
+//                         solution: fields.solution as string,
+//                         result: fields.result as string,
+//                         services: fields.services as string[],
+//                     });
+//                 }
+//             } catch (error) {
+//                 console.error("Error fetching content:", error);
+//             }
+//         };
+
+//         fetchContent();
+//     }, []);
+
+//     if (!content) return <p>Loading...</p>;
+
+//     return (
+//         <>
+//             <Navbar />
+//             <div className={Styles.WorkHeadersContainer}>
+//                 <div className={Styles.WorkHeadersItems}>
+//                     <h1 className={Styles.WorkHeadersItemsH1}>{content.title}</h1>
+//                     <p className={Styles.WorkHeadersItemsTexts}>{content.description}</p>
+//                     <div className={Styles.WorkHeadersContainerTwo}>
+//                         <div className={Styles.WorkHeadersItems1}>
+//                             <h4 className={Styles.WorkHeadersH1}>Challenge:</h4>
+//                             <p className={Styles.WorkHeadersPara}>{content.challenges}</p>
+//                         </div>
+//                         <div className={Styles.WorkHeadersItems1}>
+//                             <h4 className={Styles.WorkHeadersH1}>Solution:</h4>
+//                             <p className={Styles.WorkHeadersPara}>{content.solution}</p>
+//                         </div>
+//                         <div className={Styles.WorkHeadersItems1}>
+//                             <h4 className={Styles.WorkHeadersH1}>Result:</h4>
+//                             <p className={Styles.WorkHeadersPara}>{content.result}</p>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <div className={Styles.WorkHeadersBottomBackground}></div>
+//             </div>
+
+//             <div className={Styles.WorkHerosContainer}>
+//                 <div className={Styles.WorkHerosContainerListOne}>
+//                     <h1 className={Styles.WorkHerosH1}>By Zara</h1>
+//                     <p className={Styles.WorkHerosParagrph}>Tagline/ description goes here</p>
+//                     <div className={Styles.WorkHerosNavList}>
+//                         {content.services.map((service, index) => (
+//                             <nav key={index} className={Styles.WorkHerosNav}>
+//                                 {service}
+//                             </nav>
+//                         ))}
+//                     </div>
+//                 </div>
+//                 {/* Additional content or images */}
+//             </div>
+//             <Footers />
+//         </>
+//     );
+// };
+
+// export default WorkHeaders;

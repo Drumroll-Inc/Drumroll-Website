@@ -151,3 +151,80 @@
     height: 450px;
     background-color: rgba(240, 248, 255, 0.88);
 }
+
+
+
+
+
+
+@media all and (max-width: 750px) {
+    .WorkComponetContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .WorkHerosContainerListTwo {
+        gap: 30px;
+        padding: 30px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+
+    }
+
+    .WorkHerosImages1 {
+        width: 370px;
+        height: 220px;
+        text-align: center;
+        background-size: cover;
+        background-size: contain;
+        background-image: url(../../../assets/Image2.svg);
+    }
+
+    .WorkHerosImages2 {
+        width: 370px;
+        height: 220px;
+        text-align: center;
+        background-size: cover;
+        background-size: contain;
+    }
+
+    .WorkHerosImages3 {
+        width: 370px;
+        height: 220px;
+        text-align: center;
+        background-size: cover;
+        background-size: contain;
+    }
+
+    .WorkHerosImages4 {
+        width: 370px;
+        height: 220px;
+        text-align: center;
+        background-size: cover;
+        background-size: contain;
+    }
+
+    .WorkHerosImages5 {
+        width: 370px;
+        height: 220px;
+        text-align: center;
+        background-size: cover;
+        background-size: contain;
+    }
+
+    .WorkHerosImages6 {
+        width: 370px;
+        height: 220px;
+        margin-left: 4px;
+        text-align: center;
+        background-size: cover;
+        background-size: contain;
+    }
+}

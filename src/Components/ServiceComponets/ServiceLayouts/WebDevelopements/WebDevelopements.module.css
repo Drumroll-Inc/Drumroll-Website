@@ -109,3 +109,70 @@
     letter-spacing: 0.64px;
     color: rgba(255, 255, 255, 0.35);
 }
+
+
+@media all and (max-width: 750px) {
+    .WebDevelopementsContainer {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .WebDevelopementsChildListOne {
+        gap: 20px;
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .WebDevelopementsButtonPara {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .WebDevelopementsParas {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .WebDevelopementsH1 {
+        font-size: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .WebDevelopementsParas {
+        font-size: 18px;
+        padding: 20px;
+        line-height: 130%;
+        text-align: center;
+    }
+
+    .WebDevelopementsItems {
+        gap: 20px;
+        text-align: center;
+    }
+
+    .WebDevelopementsItemsLists {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .WebDevelopementsItemsListsH4 {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.35);
+    }
+}
