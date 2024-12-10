@@ -11,15 +11,6 @@
     background-image: url(../../../../assets/BusIcon.svg);
 }
 
-.WorkHeadersBottomBackground {
-    z-index: 0;
-    bottom: 0;
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.785);
-}
-
 .WorkHeadersItems {
     gap: 40px;
     display: flex;
@@ -97,22 +88,14 @@
     color: rgba(255, 255, 255, 0.35);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.WorkHeadersBottomBackground {
+    z-index: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.785);
+}
 
 
 
@@ -335,14 +318,6 @@
     background-color: rgba(245, 245, 245, 0.937);
 }
 
-
-
-
-
-
-
-
-
 .WorkHerosDivsImages {
     width: 100%;
     display: flex;
@@ -434,4 +409,280 @@
 
 
 
-@media all and (max-width: 750px) {}
+
+@media all and (max-width: 750px) {
+    .WorkHeadersContainer {
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 605px; */
+        align-items: center;
+        background-size: cover;
+        background-size: contain;
+        justify-content: center;
+        background-image: url(../../../../assets/BusIcon.svg);
+    }
+
+    .WorkHeadersItems {
+        gap: 10px;
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .WorkHeadersItemsH1 {
+        width: 90%;
+        font-size: 20px;
+        line-height: 90px;
+        color: #ffffff;
+        /* background-color: darkgoldenrod; */
+    }
+
+    .WorkHeadersItemsTexts {
+        width: 90%;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .WorkHeadersContainerTwo {
+        z-index: 1;
+        gap: 20px;
+        display: flex;
+        margin-top: 60px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .WorkHeadersH1 {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .WorkHeadersPara {
+        color: #ffffff;
+        text-align: center;
+    }
+
+
+    /* .WorkHerosImageOne {
+        width: 100%;
+        background-size: cover;
+        background-size: contain;
+        background-color: blue;
+    } */
+
+
+
+
+
+    .WorkHerosContainer {
+        gap: 6px;
+        display: flex;
+        padding: 0px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.906);
+    }
+
+    .WorkHerosContainerListTwo {
+        width: 96%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+
+    .WorkHerosDivsImages {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        cursor: pointer;
+        padding-top: 18px;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .WorkHerosImageOne {
+        width: 100%;
+        height: 244px;
+        cursor: pointer;
+        background-size: cover;
+        background-size: contain;
+        background-image: url(../../../../assets/Image1.svg);
+    }
+
+    .WorkHerosImageTwo {
+        width: 100%;
+        height: 244px;
+        cursor: pointer;
+        background-size: cover;
+        background-size: contain;
+        background-image: url(../../../../assets/Image2.svg);
+    }
+
+    .WorkHerosImageThree {
+        width: 100%;
+        height: 244px;
+        cursor: pointer;
+        background-size: cover;
+        background-size: contain;
+        background-image: url(../../../../assets/Image3.svg);
+    }
+
+    .WorkHerosImageFour {
+        width: 100%;
+        height: 244px;
+        cursor: pointer;
+        background-size: cover;
+        background-size: contain;
+        background-image: url(../../../../assets/BusIcon.svg);
+    }
+
+    .WorkHerosImageFive {
+        width: 100%;
+        height: 244px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(245, 245, 245, 0.937);
+    }
+
+    .WorkHerosImageSix {
+        width: 100%;
+        height: 244px;
+        cursor: pointer;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgb(119, 119, 30);
+    }
+
+    .WorkHerosImageSeven {
+        width: 100%;
+        height: 244px;
+        cursor: pointer;
+        margin-top: 18px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(0, 0, 255, 0.953);
+    }
+
+    .WorkHerosImageEight {
+        width: 100%;
+        height: 244px;
+        cursor: pointer;
+        margin-top: 18px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(245, 245, 245, 0.564);
+    }
+
+    .WorkHerosImageNine {
+        width: 100%;
+        height: 244px;
+        cursor: pointer;
+        margin-top: 18px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(245, 245, 245, 0.564);
+    }
+
+    .WorkHerosImageTen {
+        width: 100%;
+        height: 244px;
+        cursor: pointer;
+        margin-top: 18px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(245, 245, 245, 0.937);
+    }
+
+    .DivImagesOne {
+        width: 49%;
+        height: 244px;
+        background-size: cover;
+        background-size: contain;
+        background-image: url(../../../../assets/Images1.svg);
+    }
+
+    .DivImagesTwo {
+        width: 49%;
+        height: 244px;
+        background-size: cover;
+        background-size: contain;
+        background-image: url(../../../../assets/Images2.svg);
+    }
+
+
+
+
+
+    .DivImagesBackgroundOne {
+        width: 49%;
+        height: 244px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(245, 245, 245, 0.973);
+    }
+
+    .DivImagesBackgroundTwo {
+        width: 49%;
+        height: 244px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(245, 245, 245, 0.564);
+    }
+
+    .DivImagesBackgroundThree {
+        width: 49%;
+        height: 244px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(245, 245, 245, 0.564);
+    }
+
+    .DivImagesBackgroundFour {
+        width: 49%;
+        height: 244px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(245, 245, 245, 0.564);
+    }
+
+    .DivImagesBackgroundFive {
+        width: 49%;
+        height: 244px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(245, 245, 245, 0.564);
+    }
+
+    .DivImagesBackgroundSix {
+        width: 49%;
+        height: 244px;
+        background-size: cover;
+        background-size: contain;
+        background-color: rgba(245, 245, 245, 0.973);
+    }
+
+    .WorkHerosImageParagraph {
+        color: #FFF;
+        width: 750px;
+        padding: 20px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+}

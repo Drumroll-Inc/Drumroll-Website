@@ -106,7 +106,7 @@
 @media all and (max-width: 750px) {
     .FootersContainer {
         gap: 0px;
-        padding: 30px;
+        padding: 20px;
     }
 
     .FootersContainers {
@@ -147,6 +147,34 @@
     }
 
     .FootersItemsH4 {
+        font-size: 12px;
+    }
+
+    .FooterDivs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .FooterDivsImgs {
+        width: 150px;
+    }
+
+    .FootersItems {
+        gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .FootersItemsUL {
+        gap: 10px;
+    }
+
+    .FooterItemsLI a {
         font-size: 12px;
     }
 }

@@ -9,6 +9,7 @@ export const WorkHeaders: React.FC = () => {
         <>
             <Navbar />
             <div className={Styles.WorkHeadersContainer}>
+
                 <div className={Styles.WorkHeadersItems}>
                     <h1 className={Styles.WorkHeadersItemsH1}>Project: BY ZARA IDENTITY design & DEVELOPMENT</h1>
                     <p className={Styles.WorkHeadersItemsTexts}>

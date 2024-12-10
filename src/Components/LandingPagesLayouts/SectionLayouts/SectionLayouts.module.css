@@ -1,10 +1,12 @@
 .SectionLayoutsContainer {
     display: flex;
-    padding: 80px;
+    padding: 10px;
     flex-wrap: wrap;
+    padding-top: 80px;
     align-items: center;
     align-content: center;
     justify-content: center;
+    padding-bottom: 80px;
     background-color: #F6FFFA;
 }
 
@@ -26,6 +28,7 @@
     font-weight: 300;
     color: #21312A;
     text-align: center;
+    text-align: center;
     font-style: normal;
     line-height: normal;
     flex-direction: column;
@@ -35,9 +38,9 @@
 
 .SectionLayoutsMain2 {
     gap: 20px;
-    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -79,25 +82,31 @@
 }
 
 
+
 @media screen and (max-width: 768px) {
     .SectionLayoutsContainer {
         display: flex;
+        padding: 0px;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
 
     .SectionLayoutsMain1 {
-        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
-    .SectionLayoutsMain1 {
+    .SectionLayoutsMainH1 {
         cursor: pointer;
         font-size: 30px;
-        line-height: 60.137px;
+        line-height: 40.137px;
     }
 
     .SectionLayoutsParagraph {
+        width: 80%;
         padding: 10px;
         cursor: pointer;
         font-size: 20px;
