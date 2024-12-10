@@ -11,6 +11,8 @@
 }
 
 .SectionLayoutsMain1 {
+    display: flex;
+    flex-wrap: wrap;
     cursor: pointer;
     font-size: 36px;
     font-weight: 400;
@@ -18,16 +20,18 @@
     text-align: center;
     font-style: normal;
     line-height: 80.137px;
+    align-items: center;
+    justify-content: center;
     font-family: LotaGrotesque-Regular;
 }
 
 .SectionLayoutsParagraph {
-    padding: 80px;
+    width: 75%;
     cursor: pointer;
     font-size: 20px;
     font-weight: 300;
     color: #21312A;
-    text-align: center;
+    padding-top: 50px;
     text-align: center;
     font-style: normal;
     line-height: normal;
@@ -41,6 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
+    padding-top: 50px;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -55,7 +60,7 @@
 }
 
 .CardsImages {
-    height: 400px;
+    width: 318px;
     cursor: pointer;
 }
 

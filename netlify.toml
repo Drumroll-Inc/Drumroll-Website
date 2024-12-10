@@ -5,16 +5,11 @@ status = 200
 
 
 [[headers]]
-  for = "/videos/*.mp4"
+  for = "/WebVersion.mp4"
   [headers.values]
     Content-Type = "video/mp4"
 
 [[headers]]
-  for = "/videos/*.webm"
+  for = "/MobileVersion.mp4"
   [headers.values]
-    Content-Type = "video/webm"
-
-[[headers]]
-  for = "/videos/*.ogg"
-  [headers.values]
-    Content-Type = "video/ogg"
+    Content-Type = "video/mp4"

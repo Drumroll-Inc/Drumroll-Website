@@ -166,16 +166,20 @@
         justify-content: center;
     }
 
+    .WorkHerosContainerListOne {
+        gap: 5px;
+        width: 100%;
+        padding: 10px;
+    }
+
     .WorkHerosContainerListTwo {
         gap: 30px;
-        padding: 30px;
+        padding: 10px;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        background-color: blue;
-
     }
 
     .WorkHerosImages1 {

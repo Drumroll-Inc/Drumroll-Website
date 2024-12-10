@@ -32,8 +32,7 @@ export const WorkComponet: React.FC = () => {
                     </div>
                 </div>
                 <div className={Styles.WorkHerosContainerListTwo}>
-                    <div
-                        className={Styles.WorkHerosImages1}
+                    <div className={Styles.WorkHerosImages1}
                         onClick={() => handleImageClick("/ByZaraIWorks")}
                     ></div>
                     <div className={Styles.WorkHerosImages2}></div>
