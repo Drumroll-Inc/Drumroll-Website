@@ -36,7 +36,13 @@
 }
 
 .NavbarLayoutsA:hover {
-    background-color: #333;
+    color: rgba(255, 255, 255, 0.946);
+    background-color: rgba(0, 0, 255, 0.959);
+}
+
+.NavbarLayoutsActiveLink {
+    color: rgba(255, 255, 255, 0.946);
+    background-color: rgba(0, 0, 255, 0.959);
 }
 
 .NavbarLayoutsItems {
@@ -101,12 +107,30 @@
         position: fixed;
     }
 
+    .NavbarLayoutsContainerLists {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 18px;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
     .NavbarLayoutsItemsLists {
+        gap: 50px;
         display: none;
     }
 
     .MobileMenuToggle {
         display: block;
+    }
+
+    .HamburgerIcon,
+    .CloseIcon {
+        width: 36px;
+        height: 36px;
+        margin-top: 10px;
+        font-size: 28px;
     }
 
     .NavbarLayoutsItems {

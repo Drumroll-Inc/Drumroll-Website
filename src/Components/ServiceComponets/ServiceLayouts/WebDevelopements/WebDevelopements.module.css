@@ -77,7 +77,7 @@
     line-height: 30px;
     font-style: normal;
     font-family: Inter;
-    color: rgba(255, 255, 255, 0.693);
+    color: #FFFFFF;
 }
 
 .WebDevelopementsItemsLists {
@@ -99,7 +99,7 @@
     width: 40px;
 }
 
-.ServiceHeaderItemsListsH4 {
+.WebDevelopementsItemsListsH4 {
     width: 130px;
     font-size: 15px;
     font-weight: 500;
@@ -113,8 +113,10 @@
 
 @media all and (max-width: 750px) {
     .WebDevelopementsContainer {
-        width: 100%;
-        padding-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     .WebDevelopementsChildListOne {
@@ -124,12 +126,14 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        align-content: center;
         flex-direction: row;
         justify-content: center;
     }
 
     .WebDevelopementsButtonPara {
         gap: 20px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -138,41 +142,47 @@
     }
 
     .WebDevelopementsParas {
-        width: 70%;
         display: flex;
         flex-wrap: wrap;
+        max-width: 85%;
         text-align: center;
+        color: #FFFFFF;
     }
 
     .WebDevelopementsH1 {
-        font-size: 40px;
+        font-size: 30px;
         display: flex;
         flex-wrap: wrap;
         line-height: 40px;
         text-align: center;
     }
 
-    .WebDevelopementsParas {
-        font-size: 18px;
-        padding: 20px;
-        line-height: 130%;
-        text-align: center;
-    }
-
     .WebDevelopementsItems {
         gap: 20px;
-        text-align: center;
+        padding-left: 0px;
+        margin-top: 40px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .WebDevelopementsItemsH4 {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+    .WebDevelopementsItemsLists1 {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     .WebDevelopementsItemsLists {
-        width: 50%;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-self: center;
         flex-direction: row;
-    }
-
-    .WebDevelopementsItemsListsH4 {
-        font-size: 15px;
-        color: rgba(255, 255, 255, 0.35);
     }
 }

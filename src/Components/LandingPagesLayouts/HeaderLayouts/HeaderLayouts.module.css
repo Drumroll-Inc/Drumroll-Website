@@ -55,6 +55,10 @@
 
 
 @media screen and (max-width: 768px) {
+    .HeaderLayoutsContainer {
+        width: 100%;
+    }
+
     .DesktopOnly {
         display: none;
     }
@@ -88,3 +92,75 @@
         color: rgba(245, 195, 80, 0.90);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media screen and (max-width: 1200px) {
+
+    .HeaderLayoutsH1,
+    .HeaderLayoutsH2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .HeaderLayoutsH1,
+    .HeaderLayoutsH2 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .DesktopOnly {
+        display: none;
+    }
+
+    .MobileOnly {
+        display: block;
+    }
+
+    .HeaderLayoutsH1 {
+        font-size: 30px;
+    }
+
+    .HeaderLayoutsH2 {
+        font-size: 30px;
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .HeaderLayoutsH1 {
+        font-size: 20px;
+    }
+
+    .HeaderLayoutsH2 {
+        font-size: 20px;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .HeaderLayoutsH1 {
+        font-size: 16px;
+    }
+
+    .HeaderLayoutsH2 {
+        font-size: 16px;
+        margin-top: -10px;
+    }
+} */

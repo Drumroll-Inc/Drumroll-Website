@@ -8,12 +8,12 @@ export const HeaderLayouts: React.FC = () => {
             <div className={Styles.HeaderLayoutsVideoContainer}>
                 <video autoPlay loop muted
                     className={`${Styles.HeaderLayoutsVideo} ${Styles.DesktopOnly}`}>
-                    <source src="/Streams/WebVersion.mp4" type="video/mp4" />
+                    <source src="/public/videos/WebVersion.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <video autoPlay loop muted
                     className={`${Styles.HeaderLayoutsVideo} ${Styles.MobileOnly}`}>
-                    <source src="/Streams/MobileVersion.mp4" type="video/mp4" />
+                    <source src="MobileVersion.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>

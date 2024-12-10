@@ -106,7 +106,7 @@
 @media all and (max-width: 750px) {
     .FootersContainer {
         gap: 0px;
-        padding: 50px;
+        padding: 30px;
     }
 
     .FootersContainers {
@@ -114,7 +114,7 @@
     }
 
     .FootersList {
-        gap: 50px;
+        gap: 30px;
     }
 
     .FootersItems {
@@ -144,5 +144,9 @@
         gap: 10px;
         margin-top: 40px;
         align-self: flex-start;
+    }
+
+    .FootersItemsH4 {
+        font-size: 12px;
     }
 }

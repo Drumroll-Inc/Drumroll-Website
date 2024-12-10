@@ -47,13 +47,12 @@ export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection })
                     )}
                 </div>
                 <ul
-                    className={`${Styles.NavbarLayoutsItemsLists} ${isMobileMenuOpen ? Styles.MobileMenuOpen : ""
-                        }`}
+                    className={`${Styles.NavbarLayoutsItemsLists} ${isMobileMenuOpen ? Styles.MobileMenuOpen : ""}`}
                 >
                     {["Home", "Service", "Work"].map((link) => (
                         <li
                             key={link}
-                            className={`${Styles.NavbarLayoutsA} ${activeLink === link ? Styles.active : ""
+                            className={`${Styles.NavbarLayoutsA} ${activeLink === link ? Styles.NavbarLayoutsActiveLink : ""
                                 }`}
                             onClick={() => handleLinkClick(link)}
                         >

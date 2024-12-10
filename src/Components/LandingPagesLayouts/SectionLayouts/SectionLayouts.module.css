@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+    justify-content: center;
     background-color: #F6FFFA;
 }
 
@@ -35,7 +36,6 @@
 .SectionLayoutsMain2 {
     gap: 20px;
     cursor: pointer;
-    padding: 40px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -78,9 +78,17 @@
     line-height: 20.561px;
 }
 
+
 @media screen and (max-width: 768px) {
     .SectionLayoutsContainer {
-        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SectionLayoutsMain1 {
+        font-size: 20px;
     }
 
     .SectionLayoutsMain1 {

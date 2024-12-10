@@ -2,3 +2,19 @@
 from = "/*"
 to = "/index.html"
 status = 200
+
+
+[[headers]]
+  for = "/videos/*.mp4"
+  [headers.values]
+    Content-Type = "video/mp4"
+
+[[headers]]
+  for = "/videos/*.webm"
+  [headers.values]
+    Content-Type = "video/webm"
+
+[[headers]]
+  for = "/videos/*.ogg"
+  [headers.values]
+    Content-Type = "video/ogg"

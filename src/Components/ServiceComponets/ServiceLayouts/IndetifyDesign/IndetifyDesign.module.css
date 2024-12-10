@@ -114,8 +114,10 @@
 
 @media all and (max-width: 750px) {
     .IndetifyDesignContainer {
-        width: 100%;
-        padding-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     .IndetifyDesignContainerOne {
@@ -125,12 +127,14 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        align-content: center;
         flex-direction: row;
         justify-content: center;
     }
 
     .IndetifyDesignButtonPara {
         gap: 20px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -139,36 +143,47 @@
     }
 
     .IndetifyDesignParas {
-        width: 70%;
         display: flex;
         flex-wrap: wrap;
+        max-width: 85%;
         text-align: center;
+        color: #FFFFFF;
     }
 
     .IndetifyDesignH1 {
-        font-size: 40px;
+        font-size: 30px;
         display: flex;
         flex-wrap: wrap;
         line-height: 40px;
         text-align: center;
     }
 
-    .IndetifyDesignParas {
-        font-size: 18px;
-        padding: 20px;
-        line-height: 130%;
-        text-align: center;
-    }
-
     .IndetifyDesignItems {
         gap: 20px;
-        text-align: center;
+        padding-left: 0px;
+        margin-top: 40px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .IndetifyDesignItemsH4 {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+    .IndetifyDesignItemsLists1 {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     .IndetifyDesignItemsLists {
-        width: 50%;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-self: center;
         flex-direction: row;
     }
 }

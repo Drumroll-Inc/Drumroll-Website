@@ -21,11 +21,6 @@ export const HeroLayouts: React.FC = () => {
                     <h1 className={Styles.HeroLayoutH1}>DO YOU NEED</h1>
                 </div>
                 <div className={Styles.HeroLayoutsListItems}>
-                    <div className={`${Styles.cornerBox} ${Styles.topLeft}`}></div>
-                    <div className={`${Styles.cornerBox} ${Styles.topRight}`}></div>
-                    <div className={`${Styles.cornerBox} ${Styles.bottomLeft}`}></div>
-                    <div className={`${Styles.cornerBox} ${Styles.bottomRight}`}></div>
-
                     <img
                         src={Navigate1}
                         alt="Navigate to IndetifyDesign"
