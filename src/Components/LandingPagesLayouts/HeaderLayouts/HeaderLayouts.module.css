@@ -41,10 +41,10 @@
 }
 
 .HeaderLayoutsH1 {
-    color: #fff;
     font-size: 80px;
     font-weight: 900;
     line-height: 70.67px;
+    color: rgba(245, 245, 245, 0.938);
 }
 
 .HeaderLayoutsH2 {
@@ -80,11 +80,11 @@
     }
 
     .HeaderLayoutsH1 {
-        color: #fff;
         font-size: 30px;
         font-weight: 900;
         line-height: 30.67px;
         text-align: center;
+        color: rgba(245, 245, 245, 0.938);
     }
 
     .HeaderLayoutsH2 {

@@ -41,12 +41,11 @@
 }
 
 .SectionLayoutsMain2 {
-    gap: 20px;
+    gap: 15px;
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
     padding-top: 50px;
-    flex-direction: row;
     align-content: center;
     justify-content: center;
 }
@@ -60,7 +59,7 @@
 }
 
 .CardsImages {
-    width: 318px;
+    width: 300px;
     cursor: pointer;
 }
 
