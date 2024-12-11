@@ -47,8 +47,8 @@
 }
 
 .HeroLayoutsListItems {
-    width: 500px;
-    height: 430px;
+    width: 540px;
+    height: 450px;
     cursor: pointer;
     flex-shrink: 0;
     display: flex;
@@ -73,6 +73,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
+    object-fit: contain;
     background-size: contain;
     background-image: url(../../../assets/FaceImages.svg);
 }

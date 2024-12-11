@@ -5,7 +5,7 @@
     overflow: hidden;
     position: relative;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.841);
 }
 
@@ -31,7 +31,7 @@
     left: 50%;
     width: 100%;
     z-index: 10;
-    bottom: 0px;
+    bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -43,14 +43,19 @@
 .HeaderLayoutsH1 {
     font-size: 80px;
     font-weight: 900;
+    text-align: center;
     line-height: 70.67px;
     color: rgba(245, 245, 245, 0.938);
 }
 
 .HeaderLayoutsH2 {
-    font-size: 95px;
+    font-size: 80px;
+    color: #FFC107;
     font-weight: 900;
-    color: rgba(245, 195, 80, 0.90);
+    text-align: center;
+    line-height: 70.67px;
+    text-transform: capitalize;
+    font-family: 'Pacifico', cursive;
 }
 
 
