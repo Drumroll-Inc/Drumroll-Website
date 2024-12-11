@@ -125,6 +125,7 @@
         width: 100%;
         padding: 0px;
         display: flex;
+        margin-top: 25%;
         flex-wrap: wrap;
         align-items: center;
         align-content: center;
@@ -156,6 +157,7 @@
         flex-wrap: wrap;
         line-height: 40px;
         text-align: center;
+        letter-spacing: 4px;
     }
 
     .IndetifyDesignItems {
@@ -171,19 +173,26 @@
         margin-left: 30px;
     }
 
-    .IndetifyDesignItemsLists1 {
-        gap: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
     .IndetifyDesignItemsLists {
+        gap: 20px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-self: center;
         flex-direction: row;
+    }
+
+    .IndetifyDesignItemsLists1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .IndetifyDesignItemsListsH4 {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .svgIcons {
+        width: 30px;
     }
 }

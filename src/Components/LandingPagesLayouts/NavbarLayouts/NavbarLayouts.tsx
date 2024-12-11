@@ -8,6 +8,7 @@ import Drumrollogo from "../../../assets/Drumrollogo.svg";
 import Styles from "./NavbarLayouts.module.css";
 
 
+
 interface NavbarLayoutsProps {
     scrollToSection?: (section: string) => void;
 }

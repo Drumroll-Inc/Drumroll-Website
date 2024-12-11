@@ -170,19 +170,26 @@
         margin-left: 30px;
     }
 
-    .WebDevelopementsItemsLists1 {
-        gap: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
     .WebDevelopementsItemsLists {
+        gap: 20px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-self: center;
         flex-direction: row;
+    }
+
+    .WebDevelopementsItemsLists1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .WebDevelopementsItemsListsH4 {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .svgIcons {
+        width: 30px;
     }
 }
