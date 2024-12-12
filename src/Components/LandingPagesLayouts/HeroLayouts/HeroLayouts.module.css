@@ -47,8 +47,8 @@
 }
 
 .HeroLayoutsListItems {
-    width: 600px;
-    height: 490px;
+    width: 500px;
+    height: 440px;
     cursor: pointer;
     flex-shrink: 0;
     display: flex;

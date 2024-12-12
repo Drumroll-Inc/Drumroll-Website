@@ -54,10 +54,11 @@
     align-content: center;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .CardsImages {
-    width: 320px;
+    width: 300px;
     cursor: pointer;
 }
 

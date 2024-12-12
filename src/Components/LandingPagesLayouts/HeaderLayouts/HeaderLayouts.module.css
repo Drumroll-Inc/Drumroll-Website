@@ -43,13 +43,14 @@
     left: 50%;
     width: 100%;
     z-index: 10;
-    bottom: 20px;
+    bottom: -100px;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
     align-items: center;
     justify-content: center;
     transform: translateX(-50%);
+    padding: 121px 60px 121px 60px;
 }
 
 .HeaderLayoutsH1 {

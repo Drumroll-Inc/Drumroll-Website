@@ -13,7 +13,7 @@
 
 .IndetifyDesignContainerOne {
     gap: 20px;
-    padding: 80px;
+    padding: 55px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 35%;
@@ -21,12 +21,12 @@
 }
 
 .IndetifyDesignH1 {
-    color: #FFF;
     width: 700px;
     font-size: 60px;
     font-weight: 800;
     line-height: 60px;
     font-style: normal;
+    color: #FFFFFF;
     font-family: Inter;
     letter-spacing: -5px;
     text-transform: uppercase;
@@ -39,27 +39,27 @@
 }
 
 .IndetifyDesignBTC {
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
     outline: none;
     font-weight: 500;
     line-height: 130%;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #FFFFFF;
     border: solid 2px #FFFFFF;
     color: rgba(0, 0, 0, 0.852);
 }
 
 .IndetifyDesignParas {
-    width: 820px;
-    font-size: 18px;
+    width: 720px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 130%;
     font-family: Inter;
     font-style: normal;
     letter-spacing: 0.64px;
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.566);
 }
 
 .IndetifyDesignItems {
