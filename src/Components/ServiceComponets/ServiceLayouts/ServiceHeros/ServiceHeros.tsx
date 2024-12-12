@@ -45,7 +45,7 @@ export const ServiceHeros: React.FC = () => {
                     <h2 className={Styles.ServiceHerosH2}>Dive into Our Creative Showcase</h2>
                 </div>
                 <p className={Styles.ServiceHerosParagraph}>
-                    Welcome to our portfolio, where creativity meets results. Here, you’ll find a curated selection of our finest projects, each a testament to our dedication, innovation, and expertise.
+                    Welcome to our portfolio, where creativity meets results. Here, you’ll find a curated selection of our finest projects, each a testament to our dedication, innovation, and expertise. We take pride in our ability to transform ideas into impactful realities. Explore the stories behind our work and discover how we’ve helped businesses like yours stand out and succeed.
                 </p>
             </div>
             <div className={Styles.SliderContainer}>

@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.906);
+    background-color: #000000;
 }
 
 .ServiceHerosChildOne {
@@ -44,8 +44,8 @@
 }
 
 .ServiceHerosParagraph {
-    width: 850px;
-    font-size: 15px;
+    width: 710px;
+    font-size: 13px;
     cursor: pointer;
     font-weight: 100;
     color: #FFFFFF99;

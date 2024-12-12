@@ -3,8 +3,9 @@
 
 
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,10 +17,9 @@ body {
   font-style: normal;
 }
 
-
-/* .hanken-grotesk-<uniquifier> {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-} */
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

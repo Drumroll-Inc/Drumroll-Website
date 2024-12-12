@@ -1,12 +1,12 @@
 import LandingPages from "./Components/LandingPasges/LandingPasges";
-// import App from "./App.css";
 
-function App() {
+
+function MainApp() {
   return (
     <>
       <LandingPages />
     </>
-  )
+  );
 }
 
-export default App
+export default MainApp;

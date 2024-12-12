@@ -4,19 +4,17 @@
     flex-wrap: wrap;
     padding-top: 180px;
     align-items: center;
-    align-items: flex-start;
-    justify-content: flex-start;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.906);
 }
 
 .WorkHerosContainerListOne {
     gap: 5px;
-    width: 250px;
+    width: 300px;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -25px;
+    margin-top: -47%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -105,14 +103,15 @@
 }
 
 .WorkHerosContainerListTwo {
-    gap: 20px;
+    gap: 30px;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    max-width: 950px;
+    max-width: 1040px;
     align-items: center;
+    align-content: center;
     justify-content: center;
 }
 
@@ -167,17 +166,17 @@
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
+    padding-right: 50px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* align-items: flex-start;
-    justify-content: flex-start; */
+    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.906);
 }
 
 .WorkComponetFooterOne {
     gap: 5px;
-    width: 270px;
+    width: 300px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -216,7 +215,7 @@
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    max-width: 1040px;
+    max-width: 1080px;
     align-items: center;
     justify-content: center;
     justify-content: flex-start;
@@ -246,19 +245,19 @@
 }
 
 .WorkHerosImages222 {
-    width: 334px;
+    width: 354px;
     height: 200px;
     background-color: rgba(240, 248, 255, 0.88);
 }
 
 .WorkHerosImages2222 {
-    width: 334px;
+    width: 354px;
     height: 200px;
     background-color: rgba(240, 248, 255, 0.88);
 }
 
 .WorkHerosImages22222 {
-    width: 334px;
+    width: 354px;
     height: 200px;
     background-color: rgba(240, 248, 255, 0.88);
 }
