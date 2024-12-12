@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { IoIosCloseCircle } from "react-icons/io";
@@ -15,12 +15,24 @@ interface NavbarLayoutsProps {
 
 export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection }) => {
     const [activeLink, setActiveLink] = useState<string>("Home");
+    const [hoveredLink, setHoveredLink] = useState<string | null>(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
     const navigate = useNavigate();
     const location = useLocation();
 
+    useEffect(() => {
+        if (location.pathname === "/WorkComponet") {
+            setActiveLink("Work");
+        } else if (location.search.includes("Service")) {
+            setActiveLink("Service");
+        } else if (location.pathname === "/") {
+            setActiveLink("Home");
+        }
+    }, [location]);
+
     const handleLinkClick = (linkName: string) => {
         setActiveLink(linkName);
+        setHoveredLink(null);
         setIsMobileMenuOpen(false);
 
         if (linkName === "Work") {
@@ -48,14 +60,21 @@ export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection })
                     )}
                 </div>
                 <ul
-                    className={`${Styles.NavbarLayoutsItemsLists} ${isMobileMenuOpen ? Styles.MobileMenuOpen : ""}`}
+                    className={`${Styles.NavbarLayoutsItemsLists} ${isMobileMenuOpen ? Styles.MobileMenuOpen : ""
+                        }`}
                 >
                     {["Home", "Service", "Work"].map((link) => (
                         <li
                             key={link}
-                            className={`${Styles.NavbarLayoutsA} ${activeLink === link ? Styles.NavbarLayoutsActiveLink : ""
+                            className={`${Styles.NavbarLayoutsA} ${hoveredLink === link
+                                ? Styles.NavbarLayoutsHoveredLink
+                                : activeLink === link
+                                    ? Styles.NavbarLayoutsActiveLink
+                                    : ""
                                 }`}
                             onClick={() => handleLinkClick(link)}
+                            onMouseEnter={() => setHoveredLink(link)}
+                            onMouseLeave={() => setHoveredLink(null)}
                         >
                             {link}
                         </li>
@@ -81,3 +100,4 @@ export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection })
 };
 
 export default NavbarLayouts;
+

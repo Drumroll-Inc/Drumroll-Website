@@ -9,6 +9,18 @@
     background-color: rgba(0, 0, 0, 0.841);
 }
 
+.HeaderLayoutsVideoContainer::before {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.417);
+}
+
 .HeaderLayoutsVideo {
     top: 0;
     left: 0;
@@ -31,7 +43,7 @@
     left: 50%;
     width: 100%;
     z-index: 10;
-    bottom: 30px;
+    bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -41,19 +53,20 @@
 }
 
 .HeaderLayoutsH1 {
-    font-size: 80px;
+    font-size: 88px;
     font-weight: 900;
     text-align: center;
-    line-height: 70.67px;
-    color: rgba(245, 245, 245, 0.938);
+    line-height: 100.2px;
+    color: #FFFFFF;
+    font-family: "Hanken Grotesk";
 }
 
 .HeaderLayoutsH2 {
-    font-size: 80px;
+    font-size: 88px;
     color: #FFC107;
-    font-weight: 900;
+    font-weight: 400;
     text-align: center;
-    line-height: 70.67px;
+    line-height: 100.2px;
     text-transform: capitalize;
     font-family: 'Pacifico', cursive;
 }

@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     overflow-y: scroll;
     align-items: center;
-    flex-direction: row;
+    align-content: center;
     justify-content: center;
     scroll-behavior: smooth;
     background-color: #2E318D;
@@ -29,15 +29,15 @@
 }
 
 .HeroLayoutH1 {
-    font-size: 100px;
+    font-size: 110px;
     font-weight: 900;
     cursor: pointer;
-    font-style: normal;
-    line-height: 307.2px;
-    letter-spacing: -6.693px;
+    text-align: center;
+    color: #F5C350E5;
+    line-height: 10.2px;
+    letter-spacing: -8.693px;
     text-transform: uppercase;
     font-family: "Hanken Grotesk";
-    color: rgba(245, 195, 80, 0.90);
 }
 
 .HeroLayoutsListItems1 {
@@ -47,8 +47,8 @@
 }
 
 .HeroLayoutsListItems {
-    width: 570px;
-    height: 470px;
+    width: 600px;
+    height: 490px;
     cursor: pointer;
     flex-shrink: 0;
     display: flex;
@@ -57,8 +57,8 @@
     flex-direction: column;
     scrollbar-width: thin;
     border: 5px solid #ffffff;
-    background-color: #1e3a8a;
-    scrollbar-color: #ffffff #0000ff;
+    background-color: #2E318D;
+    scrollbar-color: #ffffff #2E318D;
 }
 
 .HeroLayoutImage {
@@ -68,8 +68,7 @@
 }
 
 .HeroLayoutsImageDiv {
-    width: 1440px;
-    height: 700px;
+    height: 750px;
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
@@ -95,7 +94,7 @@
     }
 
     .HeroLayoutH1 {
-        font-size: 55px;
+        font-size: 60px;
     }
 
     .HeroLayoutsListItems {
@@ -124,8 +123,7 @@
     }
 
     .HeroLayoutsImageDiv {
-        width: 100%;
-        height: 160px;
+        height: 175px;
         display: flex;
         flex-wrap: wrap;
         flex-shrink: 0;

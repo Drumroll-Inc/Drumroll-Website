@@ -160,13 +160,18 @@
 
 
 
+
+
+
 .WorkComponetFooters {
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    /* align-items: flex-start;
+    justify-content: flex-start; */
     background-color: rgba(0, 0, 0, 0.906);
 }
 

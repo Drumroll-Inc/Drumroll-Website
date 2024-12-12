@@ -14,11 +14,10 @@
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 400;
     color: #21312A;
     text-align: center;
-    font-style: normal;
     line-height: 80.137px;
     align-items: center;
     justify-content: center;
@@ -26,15 +25,14 @@
 }
 
 .SectionLayoutsParagraph {
-    width: 75%;
+    width: 58%;
     cursor: pointer;
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 15px;
+    font-weight: 300;
     color: #21312A;
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
-    font-style: normal;
-    line-height: normal;
+    line-height: 18px;
     flex-direction: column;
     justify-content: center;
     font-family: LotaGrotesque-Light;
@@ -59,24 +57,24 @@
 }
 
 .CardsImages {
-    width: 300px;
+    width: 320px;
     cursor: pointer;
 }
 
 .CardsParagrah {
     cursor: pointer;
-    color: #2D2220;
+    color: #6B514B;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
     text-align: center;
     font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50.561px;
+    line-height: 20.561px;
 }
 
 .CardsTexts {
     font-size: 20px;
-    font-style: normal;
+    margin-top: 10px;
     font-weight: 400;
     cursor: pointer;
     color: #6B514B;
@@ -103,19 +101,16 @@
         justify-content: center;
     }
 
-    .SectionLayoutsMainH1 {
+    .SectionLayoutsMain1 {
         cursor: pointer;
-        font-size: 30px;
-        line-height: 40.137px;
+        font-size: 15px;
+        margin-top: 40px;
+        text-align: center;
+        line-height: 30.137px;
     }
 
     .SectionLayoutsParagraph {
-        width: 80%;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: 300;
-        margin-top: 40px;
+        width: 85%;
     }
 
     .SectionLayoutsMain2 {
