@@ -51,11 +51,10 @@
     justify-content: center;
     flex-direction: row;
     transform: translateX(-50%);
-    /* padding: 121px 60px 121px 60px; */
 }
 
 .HeaderLayoutsH1 {
-    font-size: 85px;
+    font-size: 88px;
     font-weight: 900;
     text-align: center;
     line-height: 100.2px;
@@ -64,7 +63,7 @@
 }
 
 .HeaderLayoutsH2 {
-    font-size: 85px;
+    font-size: 88px;
     color: #FFC107;
     font-weight: 400;
     text-align: center;
