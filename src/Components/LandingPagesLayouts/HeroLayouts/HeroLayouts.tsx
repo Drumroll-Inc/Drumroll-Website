@@ -40,7 +40,6 @@ export const HeroLayouts: React.FC = () => {
                         onClick={() => handleNavigation("/WebDevelopements")}
                     />
                 </div>
-
             </div>
             <div className={Styles.HeroLayoutsImageDiv}></div>
         </div>

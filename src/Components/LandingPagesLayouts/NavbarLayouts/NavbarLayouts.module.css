@@ -16,7 +16,7 @@
 }
 
 .NavbarLayoutsImage {
-    width: 120px;
+    width: 100px;
     cursor: pointer;
 }
 
@@ -29,6 +29,7 @@
 .NavbarLayoutsA {
     color: white;
     cursor: pointer;
+    font-size: 15px;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
@@ -36,12 +37,12 @@
 }
 
 .NavbarLayoutsA:hover {
-    color: rgba(255, 255, 255, 0.946);
+    color: rgb(198, 116, 9);
     background-color: rgba(0, 0, 255, 0.959);
 }
 
 .NavbarLayoutsActiveLink {
-    color: rgba(255, 255, 255, 0.946);
+    color: rgb(198, 116, 9);
     background-color: rgba(0, 0, 255, 0.959);
 }
 

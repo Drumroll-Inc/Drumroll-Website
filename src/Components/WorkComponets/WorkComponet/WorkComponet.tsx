@@ -44,6 +44,25 @@ export const WorkComponet: React.FC = () => {
                     <div className={Styles.WorkHerosImages8}></div>
                 </div>
             </div>
+            <div className={Styles.WorkComponetFooters}>
+                <div className={Styles.WorkComponetFooterOne}>
+                    <div className={Styles.WorkComponetFooterChildOne}>
+                        <h2 className={Styles.WorkComponetFooterH2}>Want to talk about a project?</h2>
+                        <h4 className={Styles.WorkComponetFooterH4}>hello@drumroll.Digital</h4>
+                    </div>
+                </div>
+                <div className={Styles.WorkComponetFooterTwo}>
+                    <div className={Styles.WorkComponetFooterTwoChild}>
+                        <h5 className={Styles.WorkComponetFooterFive}>Related Projects</h5>
+                        <h5 className={Styles.WorkComponetFooterFive}>More Projects</h5>
+                    </div>
+                    <div className={Styles.WorkComponetFooterChildTwoss}>
+                        <div className={Styles.WorkHerosImages222}></div>
+                        <div className={Styles.WorkHerosImages2222}></div>
+                        <div className={Styles.WorkHerosImages22222}></div>
+                    </div>
+                </div>
+            </div>
             <Footers />
         </>
     );
