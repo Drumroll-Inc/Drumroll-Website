@@ -3,7 +3,7 @@
     left: 0;
     display: flex;
     flex-wrap: wrap;
-    overflow-y: scroll;
+    overflow-y: auto;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -16,12 +16,11 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 10rem;
+    padding-bottom: 10rem;
     flex-direction: row;
     align-content: center;
-    padding-bottom: 10rem;
-    justify-content: center;
-    background-color: #2E318D;
     justify-content: space-around;
+    background-color: #2E318D;
 }
 
 .HeroLayoutsLists1 {
@@ -37,7 +36,7 @@
     cursor: pointer;
     text-align: center;
     color: #F5C350E5;
-    line-height: 10.2px;
+    line-height: 8rem;
     letter-spacing: -8.693px;
     text-transform: uppercase;
     font-family: "Hanken Grotesk";
@@ -56,7 +55,7 @@
     flex-shrink: 0;
     display: flex;
     position: relative;
-    overflow-y: scroll;
+    overflow-y: auto;
     flex-direction: column;
     scrollbar-width: thin;
     border: 5px solid #ffffff;
@@ -67,7 +66,6 @@
 .HeroLayoutImage {
     padding: 1rem;
     height: auto;
-    object-fit: cover;
     object-fit: contain;
     background-size: contain;
 }
@@ -78,12 +76,57 @@
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
-    object-fit: cover;
     object-fit: contain;
     background-size: contain;
     background-image: url(../../../assets/FaceImages.svg);
 }
 
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .HeroLayoutsListmain {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        justify-content: center;
+    }
+
+    .HeroLayoutH1 {
+        font-size: 5rem;
+        line-height: 6rem;
+        letter-spacing: -6px;
+    }
+
+    .HeroLayoutsListItems {
+        width: 30rem;
+        height: 25rem;
+    }
+
+    .HeroLayoutsImageDiv {
+        height: 40rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .HeroLayoutsListmain {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        justify-content: space-evenly;
+    }
+
+    .HeroLayoutH1 {
+        font-size: 8rem;
+        line-height: 9rem;
+        letter-spacing: -10px;
+    }
+
+    .HeroLayoutsListItems {
+        width: 35rem;
+        height: 30rem;
+    }
+
+    .HeroLayoutsImageDiv {
+        height: 47rem;
+    }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -101,7 +144,6 @@
     }
 
     .HeroLayoutH1 {
-        /* width: 100%; */
         font-size: 3rem;
         line-height: 50.2px;
         letter-spacing: -8.693px;
@@ -133,7 +175,7 @@
     }
 
     .HeroLayoutsImageDiv {
-        height: 10rem;
+        height: 10.42rem;
         display: flex;
         flex-wrap: wrap;
         flex-shrink: 0;

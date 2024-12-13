@@ -52,12 +52,11 @@
     align-items: center;
     flex-direction: row;
     align-content: center;
-    justify-content: center;
     justify-content: space-evenly;
 }
 
 .HeaderLayoutsH1 {
-    font-size: 105px;
+    font-size: 100px;
     font-weight: 900;
     text-align: center;
     line-height: 100.2px;
@@ -67,7 +66,7 @@
 }
 
 .HeaderLayoutsH2 {
-    font-size: 105px;
+    font-size: 100px;
     color: #FFC107;
     font-weight: 400;
     text-align: center;
@@ -76,6 +75,51 @@
     font-family: 'Hantari';
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .HeaderLayoutsContainer {
+        width: 100%;
+    }
+
+    .HeaderLayoutsH1,
+    .HeaderLayoutsH2 {
+        font-size: 70px;
+        line-height: 80px;
+        letter-spacing: -5px;
+    }
+
+    .HeaderLayoutsContainer2 {
+        gap: 18px;
+        padding: 1rem;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .HeaderLayoutsContainer {
+        width: 100%;
+    }
+
+    .HeaderLayoutsH1 {
+        font-size: 106px;
+        line-height: 110px;
+        letter-spacing: -10px;
+    }
+
+    .HeaderLayoutsH2 {
+        font-size: 106px;
+        letter-spacing: -14px;
+    }
+
+    .HeaderLayoutsContainer2 {
+        gap: 25px;
+        padding: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 
 @media screen and (max-width: 768px) {

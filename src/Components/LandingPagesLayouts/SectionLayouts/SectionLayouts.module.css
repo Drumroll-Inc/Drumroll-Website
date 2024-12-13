@@ -19,7 +19,7 @@
     color: #21312A;
     text-align: center;
     font-weight: lighter;
-    line-height: 80.137px;
+    line-height: 80px;
     align-items: center;
     justify-content: center;
     font-family: "Lato", sans-serif;
@@ -28,12 +28,12 @@
 .SectionLayoutsParagraph {
     width: 65%;
     cursor: pointer;
-    font-size: 1.10rem;
+    font-size: 1.1rem;
     font-weight: 100;
     color: #21312A;
     padding-top: 30px;
     text-align: center;
-    line-height: 18px;
+    line-height: 1.8rem;
     flex-direction: column;
     justify-content: center;
     font-family: LotaGrotesque-Light;
@@ -55,22 +55,25 @@
     align-content: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .CardsImages {
     width: 20rem;
+    height: auto;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .CardsParagrah {
     cursor: pointer;
     color: #6B514B;
-    font-size: 1.10rem;
+    font-size: 1.1rem;
     margin-top: 1rem;
     font-weight: 400;
     text-align: center;
     font-family: Inter;
-    line-height: 20.561px;
+    line-height: 2rem;
 }
 
 .CardsTexts {
@@ -81,9 +84,68 @@
     color: #6B514B;
     text-align: center;
     font-family: Inter;
-    line-height: 20.561px;
+    line-height: 2rem;
 }
 
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .SectionLayoutsContainer {
+        padding: 1.5rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .SectionLayoutsMain1 {
+        font-size: 1.8rem;
+        line-height: 70px;
+    }
+
+    .SectionLayoutsParagraph {
+        width: 75%;
+        font-size: 1.2rem;
+        line-height: 1.27rem;
+    }
+
+    .CardsImages {
+        width: 15rem;
+    }
+
+    .CardsParagrah,
+    .CardsTexts {
+        font-size: 0.95rem;
+        line-height: 1.8rem;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .SectionLayoutsContainer {
+        padding: 2.5rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .SectionLayoutsMain1 {
+        font-size: 2.2rem;
+        line-height: 85px;
+    }
+
+    .SectionLayoutsParagraph {
+        width: 75%;
+        font-size: 1.2rem;
+        line-height: 1.27rem;
+    }
+
+    .CardsImages {
+        width: 20rem;
+    }
+
+    .CardsParagrah,
+    .CardsTexts {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+    }
+}
 
 
 @media screen and (max-width: 768px) {

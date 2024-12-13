@@ -15,9 +15,8 @@
     margin-top: 2rem;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
-    background-color: #000;
     justify-content: space-between;
+    background-color: #000;
 }
 
 .FootersList {
@@ -102,6 +101,65 @@
     align-self: flex-end;
     justify-self: flex-end;
     border-top: 1px solid rgba(245, 195, 80, 0.15);
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .FootersContainers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FootersList {
+        gap: 100px;
+    }
+
+    .FootersItems {
+        gap: 100px;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FooterItemsLI a {
+        font-size: 0.70rem;
+    }
+
+    .FooterLasts {
+        gap: 60px;
+        padding: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .FootersContainers {
+        padding: 1rem 1.67rem;
+    }
+
+    .FootersList {
+        gap: 100px;
+    }
+
+    .FootersCompanyImg {
+        width: 7rem;
+    }
+
+    .FootersItems {
+        gap: 160px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .FooterItemsLI a {
+        font-size: 0.80rem;
+    }
+
+    .FooterLasts {
+        gap: 80px;
+        padding: 1.69rem;
+    }
 }
 
 
