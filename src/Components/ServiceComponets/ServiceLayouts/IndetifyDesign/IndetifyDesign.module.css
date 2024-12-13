@@ -30,6 +30,7 @@
     font-family: Inter;
     letter-spacing: -5px;
     text-transform: uppercase;
+    font-family: "Inter", sans-serif;
 }
 
 .IndetifyDesignButtonPara {
@@ -56,10 +57,10 @@
     font-size: 15px;
     font-weight: 500;
     line-height: 130%;
-    font-family: Inter;
     font-style: normal;
     letter-spacing: 0.64px;
     color: rgba(255, 255, 255, 0.566);
+    font-family: "Inter", sans-serif;
 }
 
 .IndetifyDesignItems {
@@ -79,6 +80,7 @@
     font-style: normal;
     font-family: Inter;
     color: rgba(255, 255, 255, 0.693);
+    font-family: "Inter", sans-serif;
 }
 
 .IndetifyDesignItemsLists {
@@ -146,18 +148,21 @@
     .IndetifyDesignParas {
         display: flex;
         flex-wrap: wrap;
+        font-size: 12px;
         max-width: 85%;
         text-align: center;
         color: #FFFFFF;
+        font-family: "Inter", sans-serif;
     }
 
     .IndetifyDesignH1 {
-        font-size: 30px;
+        font-size: 24px;
         display: flex;
         flex-wrap: wrap;
-        line-height: 40px;
+        line-height: 25px;
         text-align: center;
-        letter-spacing: 4px;
+        letter-spacing: 0px;
+        font-family: "Inter", sans-serif;
     }
 
     .IndetifyDesignItems {
@@ -169,8 +174,9 @@
     }
 
     .IndetifyDesignItemsH4 {
-        font-size: 30px;
+        font-size: 25px;
         margin-left: 30px;
+        font-family: "Inter", sans-serif;
     }
 
     .IndetifyDesignItemsLists {

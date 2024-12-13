@@ -30,6 +30,7 @@
     font-family: Inter;
     letter-spacing: -5px;
     text-transform: uppercase;
+    font-family: "Inter", sans-serif;
 }
 
 .WebDevelopementsButtonPara {
@@ -49,6 +50,7 @@
     background-color: #FFFFFF;
     border: solid 2px #FFFFFF;
     color: rgba(0, 0, 0, 0.852);
+    font-family: "Inter", sans-serif;
 }
 
 .WebDevelopementsParas {
@@ -60,6 +62,7 @@
     font-style: normal;
     letter-spacing: 0.64px;
     color: rgba(255, 255, 255, 0.566);
+    font-family: "Inter", sans-serif;
 }
 
 .WebDevelopementsItems {
@@ -79,6 +82,7 @@
     font-style: normal;
     font-family: Inter;
     color: #FFFFFF;
+    font-family: "Inter", sans-serif;
 }
 
 .WebDevelopementsItemsLists {
@@ -109,6 +113,7 @@
     font-style: normal;
     letter-spacing: 0.64px;
     color: rgba(255, 255, 255, 0.35);
+    font-family: "Inter", sans-serif;
 }
 
 
@@ -140,22 +145,26 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        font-family: "Inter", sans-serif;
     }
 
     .WebDevelopementsParas {
         display: flex;
         flex-wrap: wrap;
+        font-size: 12px;
         max-width: 85%;
         text-align: center;
         color: #FFFFFF;
+        font-family: "Inter", sans-serif;
     }
 
     .WebDevelopementsH1 {
         font-size: 30px;
         display: flex;
         flex-wrap: wrap;
-        line-height: 40px;
+        line-height: 30px;
         text-align: center;
+        font-family: "Inter", sans-serif;
     }
 
     .WebDevelopementsItems {
@@ -167,8 +176,9 @@
     }
 
     .WebDevelopementsItemsH4 {
-        font-size: 30px;
+        font-size: 25px;
         margin-left: 30px;
+        font-family: "Inter", sans-serif;
     }
 
     .WebDevelopementsItemsLists {

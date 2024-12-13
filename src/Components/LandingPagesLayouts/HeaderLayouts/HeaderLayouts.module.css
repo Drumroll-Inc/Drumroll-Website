@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    text-align: center;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -41,37 +42,37 @@
 }
 
 .HeaderLayoutsContainer2 {
-    gap: 20px;
-    left: 50%;
+    bottom: 0;
     width: 100%;
     z-index: 10;
-    bottom: 25px;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
     align-items: center;
-    justify-content: center;
     flex-direction: row;
-    transform: translateX(-50%);
+    align-content: center;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .HeaderLayoutsH1 {
-    font-size: 85px;
+    font-size: 102px;
     font-weight: 900;
     text-align: center;
     line-height: 100.2px;
     color: #FFFFFF;
-    font-family: "Hanken Grotesk";
+    letter-spacing: -8.69px;
+    font-family: "Hanken Grotesk", serif;
 }
 
 .HeaderLayoutsH2 {
-    font-size: 85px;
+    font-size: 102px;
     color: #FFC107;
     font-weight: 400;
     text-align: center;
     line-height: 100.2px;
-    font-family: hantari;
-    text-transform: capitalize;
+    letter-spacing: -12.69px;
+    font-family: 'Hantari';
 }
 
 
@@ -90,7 +91,7 @@
     }
 
     .HeaderLayoutsContainer2 {
-        gap: 40px;
+        gap: 20px;
         width: 100%;
         z-index: 10;
         display: flex;
@@ -102,89 +103,15 @@
     }
 
     .HeaderLayoutsH1 {
-        font-size: 30px;
-        font-weight: 900;
+        font-size: 22px;
         line-height: 30.67px;
         text-align: center;
-        color: rgba(245, 245, 245, 0.938);
+        letter-spacing: 0.69px;
     }
 
     .HeaderLayoutsH2 {
-        font-size: 30px;
-        font-weight: 900;
-        margin-top: -40px;
-        color: rgba(245, 195, 80, 0.90);
+        font-size: 22px;
+        margin-top: -60px;
+        letter-spacing: 0.69px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-@media screen and (max-width: 1200px) {
-
-    .HeaderLayoutsH1,
-    .HeaderLayoutsH2 {
-        font-size: 60px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-
-    .HeaderLayoutsH1,
-    .HeaderLayoutsH2 {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .DesktopOnly {
-        display: none;
-    }
-
-    .MobileOnly {
-        display: block;
-    }
-
-    .HeaderLayoutsH1 {
-        font-size: 30px;
-    }
-
-    .HeaderLayoutsH2 {
-        font-size: 30px;
-        margin-top: -40px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .HeaderLayoutsH1 {
-        font-size: 20px;
-    }
-
-    .HeaderLayoutsH2 {
-        font-size: 20px;
-        margin-top: -20px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .HeaderLayoutsH1 {
-        font-size: 16px;
-    }
-
-    .HeaderLayoutsH2 {
-        font-size: 16px;
-        margin-top: -10px;
-    }
-} */

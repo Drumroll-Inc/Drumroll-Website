@@ -22,7 +22,7 @@
 
 .NavbarLayoutsItemsLists {
     display: flex;
-    gap: 20px;
+    gap: 2px;
     list-style: none;
 }
 
@@ -38,6 +38,7 @@
     border-radius: 5px;
     text-decoration: none;
     letter-spacing: 0.65px;
+    font-family: "Hanken Grotesk", serif;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -70,6 +71,8 @@
 .NavbarLayoutsMeunH6 {
     font-size: 14px;
     color: #FFFFFF;
+    font-weight: 400;
+    font-family: "Hanken Grotesk", serif;
 }
 
 .NavbarLayoutsSlish {

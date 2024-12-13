@@ -45,10 +45,6 @@ export const WorkComponet: React.FC = () => {
                 </div>
             </div>
 
-
-
-
-
             <div className={Styles.WorkComponetFooters}>
                 <div className={Styles.WorkComponetFooterOne}>
                     <div className={Styles.WorkComponetFooterChildOne}>

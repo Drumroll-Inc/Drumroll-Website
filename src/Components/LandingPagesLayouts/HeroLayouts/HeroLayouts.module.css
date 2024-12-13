@@ -1,4 +1,6 @@
 .HeroLayoutsContainer {
+    top: 0;
+    left: 0;
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
@@ -13,12 +15,13 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 150px;
     flex-direction: row;
     align-content: center;
+    padding-bottom: 150px;
     justify-content: center;
     background-color: #2E318D;
-    justify-content: space-between;
-    padding: 121px 60px 121px 60px;
+    justify-content: space-around;
 }
 
 .HeroLayoutsLists1 {
@@ -47,8 +50,8 @@
 }
 
 .HeroLayoutsListItems {
-    width: 500px;
-    height: 440px;
+    width: 580px;
+    height: 450px;
     cursor: pointer;
     flex-shrink: 0;
     display: flex;
@@ -65,13 +68,16 @@
     padding: 20px;
     height: auto;
     object-fit: cover;
+    object-fit: contain;
+    background-size: contain;
 }
 
 .HeroLayoutsImageDiv {
-    height: 730px;
+    height: 750px;
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
+    object-fit: cover;
     object-fit: contain;
     background-size: contain;
     background-image: url(../../../assets/FaceImages.svg);
@@ -94,7 +100,10 @@
     }
 
     .HeroLayoutH1 {
-        font-size: 60px;
+        /* width: 100%; */
+        font-size: 50px;
+        line-height: 50.2px;
+        letter-spacing: -8.693px;
     }
 
     .HeroLayoutsListItems {
