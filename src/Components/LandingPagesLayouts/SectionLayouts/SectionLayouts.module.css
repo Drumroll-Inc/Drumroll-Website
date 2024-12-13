@@ -1,12 +1,12 @@
 .SectionLayoutsContainer {
     display: flex;
-    padding: 10px;
+    padding: 2rem;
     flex-wrap: wrap;
-    padding-top: 80px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     align-items: center;
     align-content: center;
     justify-content: center;
-    padding-bottom: 80px;
     background-color: #F6FFFA;
 }
 
@@ -14,21 +14,22 @@
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 100;
     color: #21312A;
     text-align: center;
+    font-weight: lighter;
     line-height: 80.137px;
     align-items: center;
     justify-content: center;
-    font-family: LotaGrotesque-Regular;
+    font-family: "Lato", sans-serif;
 }
 
 .SectionLayoutsParagraph {
-    width: 58%;
+    width: 65%;
     cursor: pointer;
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 1.10rem;
+    font-weight: 100;
     color: #21312A;
     padding-top: 30px;
     text-align: center;
@@ -43,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    padding-top: 50px;
+    padding-top: 2rem;
     align-content: center;
     justify-content: center;
 }
@@ -54,19 +55,18 @@
     align-content: center;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .CardsImages {
-    width: 295px;
+    width: 20rem;
     cursor: pointer;
 }
 
 .CardsParagrah {
     cursor: pointer;
     color: #6B514B;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 1.10rem;
+    margin-top: 1rem;
     font-weight: 400;
     text-align: center;
     font-family: Inter;
@@ -74,8 +74,8 @@
 }
 
 .CardsTexts {
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 1rem;
     font-weight: 400;
     cursor: pointer;
     color: #6B514B;
@@ -104,25 +104,25 @@
 
     .SectionLayoutsMain1 {
         cursor: pointer;
-        font-size: 15px;
-        margin-top: 40px;
+        font-size: 1rem;
+        margin-top: 2rem;
         text-align: center;
         line-height: 30.137px;
     }
 
     .SectionLayoutsParagraph {
         width: 85%;
+        font-size: 0.9rem;
     }
 
     .SectionLayoutsMain2 {
         gap: 20px;
-        padding: 0px;
+        padding: 0rem;
         cursor: pointer;
         margin-top: 40px;
     }
 
     .CardsImages {
-        height: 550px;
         cursor: pointer;
     }
 }

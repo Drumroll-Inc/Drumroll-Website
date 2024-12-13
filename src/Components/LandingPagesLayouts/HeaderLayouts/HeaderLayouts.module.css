@@ -45,6 +45,7 @@
     bottom: 0;
     width: 100%;
     z-index: 10;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -56,7 +57,7 @@
 }
 
 .HeaderLayoutsH1 {
-    font-size: 102px;
+    font-size: 105px;
     font-weight: 900;
     text-align: center;
     line-height: 100.2px;
@@ -66,7 +67,7 @@
 }
 
 .HeaderLayoutsH2 {
-    font-size: 102px;
+    font-size: 105px;
     color: #FFC107;
     font-weight: 400;
     text-align: center;
@@ -103,15 +104,19 @@
     }
 
     .HeaderLayoutsH1 {
-        font-size: 22px;
+        font-size: 18px;
+        font-weight: 900;
         line-height: 30.67px;
         text-align: center;
         letter-spacing: 0.69px;
+        font-family: "Inter", sans-serif;
     }
 
     .HeaderLayoutsH2 {
-        font-size: 22px;
+        font-size: 18px;
+        font-weight: 900;
         margin-top: -60px;
         letter-spacing: 0.69px;
+        font-family: "Inter", sans-serif;
     }
 }

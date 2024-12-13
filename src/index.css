@@ -20,6 +20,13 @@ body {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+
+
+  .lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
 }
 
 @media (min-width: 1024px) {
