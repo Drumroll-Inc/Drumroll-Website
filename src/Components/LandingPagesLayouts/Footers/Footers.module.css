@@ -126,7 +126,7 @@
     }
 
     .FooterLasts {
-        gap: 60px;
+        gap: 120px;
         padding: 1.5rem;
     }
 }
@@ -157,7 +157,7 @@
     }
 
     .FooterLasts {
-        gap: 80px;
+        gap: 170px;
         padding: 1.69rem;
     }
 }
