@@ -1,8 +1,0 @@
-/videos/*.mp4
-  Content-Type: video/mp4
-
-/videos/*.webm
-  Content-Type: video/webm
-
-/videos/*.ogg
-  Content-Type: video/ogg

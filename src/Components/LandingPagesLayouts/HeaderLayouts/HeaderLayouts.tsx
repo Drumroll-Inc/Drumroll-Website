@@ -18,27 +18,17 @@ export const HeaderLayouts: React.FC = () => {
     return (
         <div className={Styles.HeaderLayoutsContainer}>
             <div className={Styles.HeaderLayoutsVideoContainer}>
-                {webVideoUrl && (
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        className={`${Styles.HeaderLayoutsVideo} ${Styles.DesktopOnly}`}
-                    >
-                        <source src={webVideoUrl} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                {webVideoUrl && (<video autoPlay loop muted
+                    className={`${Styles.HeaderLayoutsVideo} ${Styles.DesktopOnly}`} >
+                    <source src={webVideoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 )}
-                {mobileVideoUrl && (
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        className={`${Styles.HeaderLayoutsVideo} ${Styles.MobileOnly}`}
-                    >
-                        <source src={mobileVideoUrl} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                {mobileVideoUrl && (<video autoPlay loop muted
+                    className={`${Styles.HeaderLayoutsVideo} ${Styles.MobileOnly}`} >
+                    <source src={mobileVideoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 )}
             </div>
             <div className={Styles.HeaderLayoutsContainer2}>

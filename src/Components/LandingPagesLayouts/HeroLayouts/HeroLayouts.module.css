@@ -7,19 +7,21 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+    justify-items: center;
     scroll-behavior: smooth;
     background-color: #2E318D;
 }
 
 .HeroLayoutsListmain {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    min-width: 100%;
     padding-top: 10rem;
-    padding-bottom: 10rem;
     flex-direction: row;
+    padding-bottom: 10rem;
     align-content: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
     background-color: #2E318D;
 }
 
@@ -31,12 +33,12 @@
 }
 
 .HeroLayoutH1 {
-    font-size: 7.45rem;
     font-weight: 900;
     cursor: pointer;
     text-align: center;
     color: #F5C350E5;
     line-height: 8rem;
+    font-size: 7.68rem;
     letter-spacing: -8.693px;
     text-transform: uppercase;
     font-family: "Hanken Grotesk";
