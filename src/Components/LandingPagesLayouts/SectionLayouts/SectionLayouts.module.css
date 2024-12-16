@@ -26,9 +26,9 @@
 }
 
 .SectionLayoutsParagraph {
-    width: 65%;
+    width: 73%;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 100;
     color: #21312A;
     padding-top: 30px;
@@ -52,10 +52,11 @@
 .SectionLayoutsCards {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 3rem;
+    text-align: center;
     align-content: center;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
 }
 
 .CardsImages {
@@ -69,7 +70,7 @@
     cursor: pointer;
     color: #6B514B;
     font-size: 1.1rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-weight: 400;
     text-align: center;
     font-family: Inter;
@@ -101,7 +102,9 @@
     }
 
     .SectionLayoutsParagraph {
-        width: 75%;
+        width: 73%;
+        font-weight: 100;
+        color: #21312A;
         font-size: 1.2rem;
         line-height: 1.27rem;
     }
@@ -110,10 +113,26 @@
         width: 15rem;
     }
 
-    .CardsParagrah,
+    .CardsParagrah {
+        cursor: pointer;
+        color: #6B514B;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        font-weight: 400;
+        text-align: center;
+        font-family: Inter;
+        line-height: 2rem;
+    }
+
     .CardsTexts {
-        font-size: 0.95rem;
-        line-height: 1.8rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-weight: 400;
+        cursor: pointer;
+        color: #6B514B;
+        text-align: center;
+        font-family: Inter;
+        line-height: 2rem;
     }
 }
 
@@ -131,8 +150,11 @@
     }
 
     .SectionLayoutsParagraph {
-        width: 75%;
-        font-size: 1.2rem;
+        width: 73%;
+        margin-top: 2rem;
+        font-weight: 100;
+        color: #21312A;
+        font-size: 1.1rem;
         line-height: 1.27rem;
     }
 
@@ -140,10 +162,26 @@
         width: 20rem;
     }
 
-    .CardsParagrah,
-    .CardsTexts {
+    .CardsParagrah {
+        cursor: pointer;
+        color: #6B514B;
         font-size: 1.1rem;
-        line-height: 2.2rem;
+        margin-top: 1rem;
+        font-weight: 400;
+        text-align: center;
+        font-family: Inter;
+        line-height: 2rem;
+    }
+
+    .CardsTexts {
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-weight: 400;
+        cursor: pointer;
+        color: #6B514B;
+        text-align: center;
+        font-family: Inter;
+        line-height: 2rem;
     }
 }
 
