@@ -91,7 +91,7 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     .SectionLayoutsContainer {
-        padding: 1.5rem;
+        padding: 1rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
@@ -102,7 +102,7 @@
     }
 
     .SectionLayoutsParagraph {
-        width: 73%;
+        width: 68%;
         font-weight: 100;
         color: #21312A;
         font-size: 1.2rem;
@@ -110,7 +110,7 @@
     }
 
     .CardsImages {
-        width: 15rem;
+        width: 14rem;
     }
 
     .CardsParagrah {

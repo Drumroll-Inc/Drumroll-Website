@@ -128,19 +128,34 @@
 .WorkHerosImages2 {
     width: 460px;
     height: 270px;
-    background-color: rgba(240, 248, 255, 0.88);
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../../assets/PriceInovation.svg);
+    /* background-color: rgba(240, 248, 255, 0.88); */
 }
 
 .WorkHerosImages3 {
     width: 460px;
     height: 270px;
-    background-color: rgba(240, 248, 255, 0.88);
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../../assets/Utterty.svg);
+    /* background-color: rgba(240, 248, 255, 0.88); */
 }
 
 .WorkHerosImages4 {
     width: 460px;
     height: 270px;
-    background-color: rgba(240, 248, 255, 0.88);
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../../assets/FMN.svg);
+    /* background-color: rgba(240, 248, 255, 0.88); */
 }
 
 .WorkHerosImages5 {
