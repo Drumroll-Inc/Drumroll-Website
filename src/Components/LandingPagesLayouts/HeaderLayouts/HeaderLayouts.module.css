@@ -45,7 +45,7 @@
     bottom: 0;
     width: 100%;
     z-index: 10;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -115,7 +115,7 @@
 
     .HeaderLayoutsContainer2 {
         gap: 25px;
-        padding: 0.28rem;
+        padding: 1rem;
         align-items: center;
         justify-content: center;
     }
