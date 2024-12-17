@@ -1,6 +1,6 @@
 .FootersContainer {
     display: flex;
-    padding: 0.20rem;
+    /* padding: 0.20rem; */
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
@@ -82,7 +82,7 @@
 .FooterItemsLI a {
     display: flex;
     flex-wrap: wrap;
-    font-size: 0.8rem;
+    font-size: 0.2rem;
     font-style: normal;
     font-weight: 500;
     text-decoration: none;
