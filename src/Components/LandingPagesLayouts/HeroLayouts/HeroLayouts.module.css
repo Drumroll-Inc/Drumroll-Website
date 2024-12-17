@@ -60,7 +60,6 @@
 
 .HeroLayoutSharpImage {
     z-index: 3;
-    /* width: 45rem; */
     height: 43rem;
     position: relative;
 }
@@ -68,25 +67,15 @@
 .HeroLayoutsListItems {
     gap: 15px;
     z-index: 4;
-    /* width: 20rem;
-    height: 20rem; */
     padding: 0.42rem;
     cursor: pointer;
     flex-shrink: 0;
     display: flex;
     overflow-y: auto;
     position: absolute;
-
-    /* background-size: cover;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; */
-
     flex-direction: column;
     scrollbar-width: thin;
-    /* border: 5px solid #ffffff; */
-    /* background-color: #2E318D; */
-
+    background-color: #2E318D;
     scrollbar-color: #ffffff #2E318D;
 }
 

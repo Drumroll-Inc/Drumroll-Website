@@ -1,20 +1,22 @@
 .WorkComponetContainer {
     display: flex;
-    padding: 15px;
+    /* padding: 1rem; */
     flex-wrap: wrap;
     padding-top: 180px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
     background-color: rgba(0, 0, 0, 0.906);
 }
 
 .WorkHerosContainerListOne {
     gap: 5px;
     width: 300px;
-    padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -47%;
+    margin-top: -50%;
+    padding: 1.51rem;
+    padding-top: 0px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -103,9 +105,9 @@
 }
 
 .WorkHerosContainerListTwo {
-    gap: 30px;
+    gap: 40px;
     width: 100%;
-    padding: 40px;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
@@ -113,10 +115,11 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+    /* background-color: cornflowerblue; */
 }
 
 .WorkHerosImages1 {
-    width: 460px;
+    width: 480px;
     height: 270px;
     background-size: cover;
     background-size: contain;
@@ -126,7 +129,7 @@
 }
 
 .WorkHerosImages2 {
-    width: 460px;
+    width: 480px;
     height: 270px;
     background-size: cover;
     background-size: contain;
@@ -137,7 +140,7 @@
 }
 
 .WorkHerosImages3 {
-    width: 460px;
+    width: 480px;
     height: 270px;
     background-size: cover;
     background-size: contain;
@@ -148,7 +151,7 @@
 }
 
 .WorkHerosImages4 {
-    width: 460px;
+    width: 480px;
     height: 270px;
     background-size: cover;
     background-size: contain;
@@ -159,13 +162,13 @@
 }
 
 .WorkHerosImages5 {
-    width: 460px;
+    width: 480px;
     height: 270px;
     background-color: rgba(240, 248, 255, 0.88);
 }
 
 .WorkHerosImages6 {
-    width: 460px;
+    width: 480px;
     height: 270px;
     background-color: rgba(240, 248, 255, 0.88);
 }
@@ -185,7 +188,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.906);
 }
 
@@ -292,7 +295,12 @@
     .WorkHerosContainerListOne {
         gap: 5px;
         width: 100%;
-        padding: 10px;
+        display: flex;
+        margin-top: 0%;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .WorkHerosContainerListTwo {
