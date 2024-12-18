@@ -144,7 +144,26 @@
 }
 
 
+@media screen and (min-width: 1440px) {
+    .ServiceHerosContainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: #000000;
+    }
 
+    .ServiceHerosChildOne {
+        gap: 20px;
+        padding: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
 
 
 

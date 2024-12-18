@@ -132,13 +132,19 @@
     }
 
     .HeroLayoutH1 {
-        font-size: 8rem;
+        font-size: 7.68rem;
         line-height: 9rem;
         letter-spacing: -10px;
     }
 
+    .HeroLayoutSharpImage {
+        z-index: 3;
+        height: 45rem;
+        position: relative;
+    }
+
     .HeroLayoutsListItems {
-        width: 34rem;
+        width: 36rem;
         height: 30rem;
     }
 
