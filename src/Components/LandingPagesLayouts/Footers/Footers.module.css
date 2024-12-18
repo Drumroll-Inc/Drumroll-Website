@@ -26,6 +26,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    /* background-color: chocolate; */
 }
 
 .FootersCompanyImg {
@@ -59,7 +60,6 @@
 }
 
 .FootersItems {
-    gap: 120px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 0rem;
@@ -68,12 +68,14 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    /* background-color: brown; */
 }
 
 .FootersItemsUL {
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -106,8 +108,14 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     .FootersContainers {
-        flex-direction: column;
+        width: 91%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         align-items: center;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
     }
 
     .FootersList {
@@ -116,9 +124,13 @@
 
     .FootersItems {
         gap: 100px;
-        margin-right: 0;
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0rem;
+        margin-right: 3rem;
+        flex-direction: row;
         align-items: center;
+        align-items: flex-start;
     }
 
     .FooterItemsLI a {
@@ -135,6 +147,7 @@
 @media screen and (min-width: 1440px) {
     .FootersContainers {
         padding: 1rem 1.67rem;
+
     }
 
     .FootersList {

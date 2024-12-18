@@ -67,6 +67,7 @@
 .HeroLayoutsListItems {
     gap: 15px;
     z-index: 4;
+    height: 47rem;
     padding: 0.42rem;
     cursor: pointer;
     flex-shrink: 0;
@@ -75,6 +76,7 @@
     position: absolute;
     flex-direction: column;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
     background-color: #2E318D;
     scrollbar-color: #ffffff #2E318D;
 }
@@ -103,10 +105,11 @@
         padding-top: 6rem;
         padding-bottom: 6rem;
         justify-content: center;
+        justify-content: space-evenly;
     }
 
     .HeroLayoutH1 {
-        font-size: 5rem;
+        font-size: 6.24rem;
         line-height: 6rem;
         letter-spacing: -6px;
     }
@@ -117,7 +120,7 @@
     }
 
     .HeroLayoutsImageDiv {
-        height: 40rem;
+        height: 42.54rem;
     }
 }
 
@@ -169,13 +172,14 @@
         height: auto;
         border: none;
         overflow: hidden;
+        margin-top: 50rem;
         align-items: center;
         flex-direction: column;
     }
 
-    /* .HeroLayoutSharpImage {
+    .HeroLayoutSharpImage {
         display: none;
-    } */
+    }
 
     .HeroLayoutImage {
         height: auto;

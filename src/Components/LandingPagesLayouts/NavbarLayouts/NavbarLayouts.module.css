@@ -114,6 +114,49 @@
 }
 
 
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .NavbarLayoutsImage {
+        width: 80px;
+        cursor: pointer;
+    }
+
+    .NavbarLayoutsA {
+        width: auto;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: "Hanken Grotesk", serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .HamburgerIcon,
+    .CloseIcon {
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+
+    .NavbarLayoutsIconMeun {
+        height: 14px;
+        cursor: pointer;
+    }
+
+    .NavbarLayoutsMeunH6 {
+        font-size: 14px;
+        color: #FFFFFF;
+        font-weight: 400;
+        cursor: pointer;
+        font-family: "Hanken Grotesk", serif;
+    }
+
+    .NavbarLayoutsSlish {
+        color: #FFFFFF;
+    }
+
+}
+
+
+
 @media screen and (max-width: 1024px) {
     .NavbarLayoutsContainerLists {
         padding: 0px 20px;

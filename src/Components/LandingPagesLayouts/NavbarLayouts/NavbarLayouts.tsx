@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
+import OpenNavbars from "../OpenNavbars/OpenNavbars";
 import { IoIosCloseCircle } from "react-icons/io";
 import BugarMeun from "../../../assets/BugarMeun.svg";
 import SearchIcon from "../../../assets/SearchIcon.svg";
 import Drumrollogo from "../../../assets/Drumrollogo.svg";
 import Styles from "./NavbarLayouts.module.css";
-
 
 
 interface NavbarLayoutsProps {
@@ -17,6 +17,7 @@ export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection })
     const [activeLink, setActiveLink] = useState<string>("Home");
     const [hoveredLink, setHoveredLink] = useState<string | null>(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+    const [isOpenNavbarsVisible, setIsOpenNavbarsVisible] = useState<boolean>(false);
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -46,6 +47,10 @@ export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection })
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen((prevState) => !prevState);
+    };
+
+    const toggleOpenNavbars = () => {
+        setIsOpenNavbarsVisible((prevState) => !prevState);
     };
 
     return (
@@ -81,10 +86,17 @@ export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection })
                     ))}
                 </ul>
                 <div
-                    className={`${Styles.NavbarLayoutsItems} ${isMobileMenuOpen ? Styles.MobileMenuOpenItems : Styles.HideOnMobile
+                    className={`${Styles.NavbarLayoutsItems} ${isMobileMenuOpen
+                        ? Styles.MobileMenuOpenItems
+                        : Styles.HideOnMobile
                         }`}
                 >
-                    <img src={BugarMeun} alt="Icon Menu" className={Styles.NavbarLayoutsIconMeun} />
+                    <img
+                        src={BugarMeun}
+                        alt="Icon Menu"
+                        className={Styles.NavbarLayoutsIconMeun}
+                        onClick={toggleOpenNavbars}
+                    />
                     <h6 className={Styles.NavbarLayoutsMeunH6}>Menu</h6>
                     <span className={Styles.NavbarLayoutsSlish}>|</span>
                     <img
@@ -95,9 +107,12 @@ export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection })
                     <span className={Styles.NavbarLayoutsSlish}>|</span>
                 </div>
             </div>
+
+            {isOpenNavbarsVisible && (
+                <OpenNavbars onClose={toggleOpenNavbars} />
+            )}
         </div>
     );
 };
 
 export default NavbarLayouts;
-

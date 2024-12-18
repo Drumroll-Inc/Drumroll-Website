@@ -1,0 +1,99 @@
+.OpenNavbarsContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 248, 255);
+}
+
+.OpenNavbarsChildOne {
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.CloseButton {
+    top: 40px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #F5C350E5;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+    border: solid 5px #2E318D;
+    background-color: #2E318D;
+    transform: translate(-50%, -50%);
+}
+
+.CloseButton:hover {
+    color: #F5C350E5;
+    background-color: #2E318D;
+}
+
+.FootersItems {
+    gap: 50px;
+    display: flex;
+}
+
+.FootersItemsUL {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.FootersItemsUL2 {
+    top: -90px;
+    margin: 0;
+    left: 120%;
+    z-index: 10;
+    display: none;
+    padding: 1rem;
+    list-style: none;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgba(49, 51, 53, 0.054);
+}
+
+.FooterItemsLI:hover .FootersItemsUL2 {
+    display: block;
+}
+
+.FootersItems {
+    gap: 50px;
+    display: flex;
+    position: relative;
+}
+
+.FooterItemsLI {
+    position: relative;
+}
+
+.FooterItemsLI a {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #21312A;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 76.667px;
+    letter-spacing: 0.64px;
+    font-family: "Inter", sans-serif;
+}
+
+.FooterItemsLI a:hover {
+    color: #2E318D;
+}

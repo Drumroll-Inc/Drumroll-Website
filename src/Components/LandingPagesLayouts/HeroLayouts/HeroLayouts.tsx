@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Shapes from "../../../assets/Shape.svg";
 import Navigate1 from "../../../assets/Navigate1.svg";
@@ -9,10 +9,64 @@ import Styles from "./HeroLayouts.module.css";
 
 export const HeroLayouts: React.FC = () => {
     const navigate = useNavigate();
+    const imageContainerRef = useRef<HTMLDivElement | null>(null);
+    const [isScrolling, setIsScrolling] = useState(false);
+    const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>(null);
 
     const handleNavigation = (path: string) => {
         navigate(path);
     };
+
+    const scrollImages = (deltaY: number) => {
+        const container = imageContainerRef.current;
+        if (!container) return;
+
+        setIsScrolling(true);
+
+        if (deltaY > 0) {
+            if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
+                setIsScrolling(false);
+            } else {
+                container.scrollTop += deltaY;
+            }
+        }
+
+        else if (deltaY < 0) {
+            if (container.scrollTop <= 0) {
+                setIsScrolling(false);
+            } else {
+                container.scrollTop += deltaY;
+            }
+        }
+    };
+
+    const handleWheelScroll = (event: React.WheelEvent<HTMLDivElement>) => {
+        if (isScrolling) return;
+
+        const { deltaY } = event;
+        scrollImages(deltaY);
+
+        if (deltaY > 0 && scrollDirection !== "down") {
+            setScrollDirection("down");
+        } else if (deltaY < 0 && scrollDirection !== "up") {
+            setScrollDirection("up");
+        }
+    };
+
+    useEffect(() => {
+        const container = imageContainerRef.current;
+        if (!container) return;
+
+        const autoScrollDown = setInterval(() => {
+            if (container.scrollTop >= container.scrollHeight - container.clientHeight) {
+                setScrollDirection("up");
+            } else {
+                container.scrollTop += 5;
+            }
+        }, 50);
+
+        return () => clearInterval(autoScrollDown);
+    }, []);
 
     return (
         <>
@@ -22,8 +76,17 @@ export const HeroLayouts: React.FC = () => {
                         <h1 className={Styles.HeroLayoutH1}>DO YOU NEED</h1>
                     </div>
                     <div className={Styles.HeaderLayoutsImageConatiner}>
-                        <img src={Shapes} alt="sharp images" className={Styles.HeroLayoutSharpImage} />
-                        <div className={Styles.HeroLayoutsListItems}>
+                        <img
+                            src={Shapes}
+                            alt="sharp images"
+                            className={Styles.HeroLayoutSharpImage}
+                        />
+                        {/* Scrollable container */}
+                        <div
+                            className={Styles.HeroLayoutsListItems}
+                            ref={imageContainerRef}
+                            onWheel={handleWheelScroll} // Handle user scroll event
+                        >
                             <img
                                 src={Navigate1}
                                 alt="Navigate to IndetifyDesign"
