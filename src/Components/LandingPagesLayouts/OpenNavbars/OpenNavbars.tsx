@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate as useRouterNavigate } from "react-router-dom";
 import Styles from "./OpenNavbars.module.css";
 
@@ -10,15 +10,6 @@ interface OpenNavbarsProps {
 
 export const OpenNavbars: React.FC<OpenNavbarsProps> = ({ onClose }) => {
     const navigate = useRouterNavigate();
-    const [showServicesMenu, setShowServicesMenu] = useState(false);
-
-    const handleServicesClick = () => {
-        setShowServicesMenu(true);
-
-        setTimeout(() => {
-            setShowServicesMenu(false);
-        }, 300000);
-    };
 
     const handleNavigation = (path: string) => {
         navigate(path);
@@ -30,24 +21,19 @@ export const OpenNavbars: React.FC<OpenNavbarsProps> = ({ onClose }) => {
             <button className={Styles.CloseButton} onClick={onClose}>
                 &times;
             </button>
-
             <div className={Styles.OpenNavbarsChildOne}>
+
                 <div className={Styles.FootersItems}>
                     <ul className={Styles.FootersItemsUL}>
                         <li className={Styles.FooterItemsLI} onClick={() => handleNavigation("/")}>
                             <a href="#">Home</a>
                         </li>
-                        <li className={Styles.FooterItemsLI} onClick={handleServicesClick}>
+                        <li className={Styles.FooterItemsLI}>
                             <a href="#">Services</a>
-                            {showServicesMenu && (
-                                <ul className={Styles.FootersItemsUL2}>
-                                    <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("/IndetifyDesign")}><a href="#">Indentity Design</a></li>
-                                    <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("ContentDevelopemts")}><a href="#">Content Strategy</a></li>
-                                    <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("/WebDevelopements")}><a href="#">Digital Development</a></li>
-                                </ul>
-                            )}
                         </li>
-                        <li className={Styles.FooterItemsLI} onClick={() => handleNavigation("/about")}>
+
+
+                        <li className={Styles.FooterItemsLI} onClick={() => handleNavigation("/")}>
                             <a href="#">About</a>
                         </li>
                         <li className={Styles.FooterItemsLI} onClick={() => handleNavigation("/WorkComponet")}>
@@ -55,6 +41,19 @@ export const OpenNavbars: React.FC<OpenNavbarsProps> = ({ onClose }) => {
                         </li>
                     </ul>
                 </div>
+
+
+                <ul className={Styles.FootersItemsUL2}>
+                    <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("/IndetifyDesign")}>
+                        <a href="#">Identity Design</a>
+                    </li>
+                    <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("ContentDevelopemts")}>
+                        <a href="#">Content Strategy</a>
+                    </li>
+                    <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("/WebDevelopements")}>
+                        <a href="#">Digital Development</a>
+                    </li>
+                </ul>
             </div>
         </div>
     );

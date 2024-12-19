@@ -45,66 +45,81 @@
     background-color: #2E318D;
 }
 
+
+
+
+
+
+
+
+
 .FootersItems {
-    gap: 50px;
     display: flex;
+    /* Display the two lists in a row */
+    gap: 50px;
+    /* Space between the two lists */
+    justify-content: center;
+    /* Center the lists horizontally within the container */
+    align-items: flex-start;
+    /* Align the lists to the top */
+    position: relative;
 }
 
 .FootersItemsUL {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    /* Display items inside the list vertically */
+    flex-direction: column;
+    /* Keep the list items in a column inside the first list */
+    text-align: center;
+    /* Center the text inside the list */
 }
 
 .FootersItemsUL2 {
-    top: -90px;
     margin: 0;
-    left: 120%;
-    z-index: 10;
-    display: none;
-    padding: 1rem;
+    padding: 2rem;
     list-style: none;
-    position: absolute;
+    min-width: 550px;
+    position: relative;
     border-radius: 5px;
-    background-color: rgba(49, 51, 53, 0.054);
-}
-
-.FooterItemsLI:hover .FootersItemsUL2 {
-    display: block;
-}
-
-.FootersItems {
-    gap: 50px;
+    background-color: #2E318D;
+    text-align: center;
+    /* Center the sublist items */
     display: flex;
-    position: relative;
+    flex-direction: column;
+    /* Keep the list items in a column inside the second list */
+    gap: 10px;
+    /* Space between the items in the second list */
 }
 
-.FooterItemsLI {
-    position: relative;
-}
+
+
+
 
 .FooterItemsLI a {
     font-size: 3rem;
     cursor: pointer;
-    color: #21312A;
     font-weight: 600;
     text-decoration: none;
     line-height: 76.667px;
     letter-spacing: 0.64px;
+    color: rgba(0, 0, 0, 0.958);
     font-family: "Inter", sans-serif;
 }
 
 .FooterItemsLIs a {
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
-    color: #21312A;
     font-weight: 600;
     text-decoration: none;
     line-height: 45.667px;
     letter-spacing: 0.64px;
     font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 0.941);
 }
 
 .FooterItemsLI a:hover {
-    color: #2E318D;
+    color: rgba(255, 255, 255, 0.941);
 }
