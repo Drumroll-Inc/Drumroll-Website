@@ -81,7 +81,7 @@ export const HeroLayouts: React.FC = () => {
                             alt="sharp images"
                             className={Styles.HeroLayoutSharpImage}
                         />
-                        {/* Scrollable container */}
+
                         <div
                             className={Styles.HeroLayoutsListItems}
                             ref={imageContainerRef}

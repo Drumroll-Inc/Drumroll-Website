@@ -70,8 +70,11 @@
     cursor: pointer;
     margin-top: 50px;
     scroll-snap-align: center;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.ImageWrapper:hover .ServiceHeroImages {
+    transform: scale(1.1);
 }
 
 .SliderContainer {
@@ -82,8 +85,9 @@
 }
 
 .ActiveImage {
-    transform: scale(1.2);
     z-index: 1;
+    opacity: 0.9;
+    transform: scale(1.2);
 }
 
 .ImageSlider {

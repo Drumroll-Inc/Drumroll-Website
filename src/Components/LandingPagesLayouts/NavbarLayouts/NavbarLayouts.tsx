@@ -56,7 +56,13 @@ export const NavbarLayouts: React.FC<NavbarLayoutsProps> = ({ scrollToSection })
     return (
         <div className={Styles.NavbarLayoutsContainers}>
             <div className={Styles.NavbarLayoutsContainerLists}>
-                <img src={Drumrollogo} alt="Drumroll logo" className={Styles.NavbarLayoutsImage} />
+                <img
+                    src={Drumrollogo}
+                    alt="Drumroll logo"
+                    className={Styles.NavbarLayoutsImage}
+                    onClick={() => navigate("/")}
+                    style={{ cursor: "pointer" }}
+                />
                 <div className={Styles.MobileMenuToggle} onClick={toggleMobileMenu}>
                     {isMobileMenuOpen ? (
                         <IoIosCloseCircle className={Styles.CloseIcon} />

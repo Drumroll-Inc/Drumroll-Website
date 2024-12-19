@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate as useRouterNavigate } from "react-router-dom";
 import Styles from "./OpenNavbars.module.css";
 
 
@@ -8,10 +9,16 @@ interface OpenNavbarsProps {
 }
 
 export const OpenNavbars: React.FC<OpenNavbarsProps> = ({ onClose }) => {
+    const navigate = useRouterNavigate();
     const [showServicesMenu, setShowServicesMenu] = useState(false);
 
     const handleMouseEnter = () => setShowServicesMenu(true);
     const handleMouseLeave = () => setShowServicesMenu(false);
+
+    const handleNavigation = (path: string) => {
+        navigate(path);
+        onClose();
+    };
 
     return (
         <div className={Styles.OpenNavbarsContainer}>
@@ -22,7 +29,7 @@ export const OpenNavbars: React.FC<OpenNavbarsProps> = ({ onClose }) => {
             <div className={Styles.OpenNavbarsChildOne}>
                 <div className={Styles.FootersItems}>
                     <ul className={Styles.FootersItemsUL}>
-                        <li className={Styles.FooterItemsLI}>
+                        <li className={Styles.FooterItemsLI} onClick={() => handleNavigation("/")}>
                             <a href="">Home</a>
                         </li>
                         <li
@@ -40,7 +47,7 @@ export const OpenNavbars: React.FC<OpenNavbarsProps> = ({ onClose }) => {
                             )}
                         </li>
                         <li className={Styles.FooterItemsLI}><a href="">About</a></li>
-                        <li className={Styles.FooterItemsLI}><a href="">Works</a></li>
+                        <li className={Styles.FooterItemsLI} onClick={() => handleNavigation("/WorkComponet")}><a href="">Works</a></li>
                     </ul>
                 </div>
             </div>

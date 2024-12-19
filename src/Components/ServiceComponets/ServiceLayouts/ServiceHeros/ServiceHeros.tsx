@@ -1,4 +1,6 @@
 import React, { useRef, useState } from "react";
+import Back1 from "../../../../assets/Back1.svg";
+import Back2 from "../../../../assets/Back2.svg";
 import Person1 from "../../../../assets/Person1.svg";
 import Person2 from "../../../../assets/Person2.svg";
 import Person3 from "../../../../assets/Person3.svg";
@@ -15,9 +17,20 @@ import Styles from "./ServiceHeros.module.css";
 export const ServiceHeros: React.FC = () => {
     const sliderRef = useRef<HTMLDivElement>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [clickedIndex, setClickedIndex] = useState<number | null>(null);
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-    const images = [Person1, Person2, Person3, Person4, Person5, Person6, Person7, Person8, Person9, Person10];
+    const images = [
+        { person: Person1, back: Back1 },
+        { person: Person2, back: Back2 },
+        { person: Person3, back: null },
+        { person: Person4, back: null },
+        { person: Person5, back: null },
+        { person: Person6, back: null },
+        { person: Person7, back: null },
+        { person: Person8, back: null },
+        { person: Person9, back: null },
+        { person: Person10, back: null },
+    ];
 
     const scrollLeft = () => {
         if (sliderRef.current) {
@@ -33,8 +46,12 @@ export const ServiceHeros: React.FC = () => {
         }
     };
 
-    const handleImageClick = (index: number) => {
-        setClickedIndex(index === clickedIndex ? null : index);
+    const handleMouseEnter = (index: number) => {
+        setHoveredIndex(index);
+    };
+
+    const handleMouseLeave = () => {
+        setHoveredIndex(null);
     };
 
     return (
@@ -51,14 +68,18 @@ export const ServiceHeros: React.FC = () => {
             <div className={Styles.SliderContainer}>
                 <div ref={sliderRef} className={Styles.ImageSlider}>
                     {images.map((image, index) => (
-                        <img
+                        <div
                             key={index}
-                            src={image}
-                            alt={`Person ${index + 1}`}
-                            className={`${Styles.ServiceHeroImages} ${clickedIndex === index ? Styles.ActiveImage : ""
-                                }`}
-                            onClick={() => handleImageClick(index)}
-                        />
+                            className={Styles.ImageWrapper}
+                            onMouseEnter={() => handleMouseEnter(index)}
+                            onMouseLeave={handleMouseLeave}
+                        >
+                            <img
+                                src={hoveredIndex === index && image.back ? image.back : image.person}
+                                alt={`Person ${index + 1}`}
+                                className={Styles.ServiceHeroImages}
+                            />
+                        </div>
                     ))}
                 </div>
                 <div className={Styles.SliderButtons}>
