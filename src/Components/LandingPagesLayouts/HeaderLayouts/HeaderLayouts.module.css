@@ -154,7 +154,7 @@
 
     .HeaderLayoutsH1 {
         cursor: pointer;
-        font-size: 18px;
+        font-size: 1.56rem;
         font-weight: 900;
         line-height: 30.67px;
         text-align: center;
@@ -164,7 +164,7 @@
 
     .HeaderLayoutsH2 {
         cursor: pointer;
-        font-size: 18px;
+        font-size: 1.56rem;
         font-weight: 900;
         margin-top: -60px;
         letter-spacing: 0.69px;
