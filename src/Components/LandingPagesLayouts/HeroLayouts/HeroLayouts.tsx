@@ -85,7 +85,7 @@ export const HeroLayouts: React.FC = () => {
                         <div
                             className={Styles.HeroLayoutsListItems}
                             ref={imageContainerRef}
-                            onWheel={handleWheelScroll} // Handle user scroll event
+                            onWheel={handleWheelScroll}
                         >
                             <img
                                 src={Navigate1}

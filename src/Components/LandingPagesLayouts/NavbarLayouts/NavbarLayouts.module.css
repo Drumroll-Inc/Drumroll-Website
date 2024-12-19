@@ -207,6 +207,7 @@
         align-items: center;
         justify-content: center;
         justify-content: space-between;
+
     }
 
     .NavbarLayoutsItemsLists {
@@ -222,7 +223,7 @@
     .CloseIcon {
         width: 36px;
         height: 36px;
-        margin-top: 8px;
+        margin-top: 6px;
         font-size: 28px;
     }
 
