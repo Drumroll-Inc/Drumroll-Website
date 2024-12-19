@@ -73,9 +73,11 @@
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.ImageWrapper:hover .ServiceHeroImages {
+/* .ImageWrapper:hover .ServiceHeroImages {
     transform: scale(1.1);
-}
+} */
+
+
 
 .SliderContainer {
     width: 100%;

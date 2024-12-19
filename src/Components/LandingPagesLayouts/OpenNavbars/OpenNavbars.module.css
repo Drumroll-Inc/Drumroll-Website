@@ -94,6 +94,17 @@
     font-family: "Inter", sans-serif;
 }
 
+.FooterItemsLIs a {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #21312A;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 45.667px;
+    letter-spacing: 0.64px;
+    font-family: "Inter", sans-serif;
+}
+
 .FooterItemsLI a:hover {
     color: #2E318D;
 }
