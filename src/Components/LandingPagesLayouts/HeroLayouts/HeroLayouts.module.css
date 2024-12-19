@@ -171,6 +171,7 @@
     .HeroLayoutH1 {
         font-size: 3rem;
         line-height: 50.2px;
+        margin-bottom: 2rem;
         letter-spacing: -8.693px;
     }
 
@@ -178,7 +179,7 @@
         height: auto;
         border: none;
         overflow: hidden;
-        margin-top: 50rem;
+        margin-top: 40rem;
         align-items: center;
         flex-direction: column;
     }
@@ -215,6 +216,7 @@
 
     .HeroLayoutsImageDiv {
         height: 10.42rem;
+        /* margin-top: 2rem; */
         object-fit: contain;
         background-size: contain;
         background-size: contain;
