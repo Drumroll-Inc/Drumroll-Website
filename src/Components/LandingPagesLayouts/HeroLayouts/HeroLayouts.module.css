@@ -44,7 +44,8 @@
 }
 
 .HeaderLayoutsImageConatiner {
-    width: 94%;
+    gap: 20px;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
@@ -52,7 +53,7 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .HeaderLayoutsImageOverlay {
@@ -68,7 +69,7 @@
 .HeroLayoutImage {
     z-index: 2;
     width: 27rem;
-    height: 28rem;
+    height: 25rem;
     object-fit: contain;
     transition: opacity 0.3s ease-in-out;
 }
@@ -126,6 +127,19 @@
         letter-spacing: -6px;
     }
 
+    .HeaderLayoutsImageConatiner {
+        gap: 20px;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
     .HeroLayoutsImageDiv {
         height: 42.54rem;
     }
@@ -148,7 +162,6 @@
         height: 47rem;
     }
 }
-
 
 @media screen and (max-width: 768px) {
     .HeroLayoutsContainer {
@@ -174,15 +187,19 @@
 
     .HeaderLayoutsImageConatiner {
         gap: 20px;
-        width: 90%;
-        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
         margin-top: -10px;
+        align-items: center;
+        justify-content: center;
     }
 
     .HeroLayoutImage {
         z-index: 2;
-        width: 25rem;
-        height: 26rem;
+        width: 21rem;
+        height: 25rem;
         cursor: pointer;
         position: absolute;
         object-fit: contain;
@@ -191,7 +208,6 @@
 
     .HeroLayoutsImageDiv {
         height: 10.42rem;
-        /* margin-top: 2rem; */
         object-fit: contain;
         background-size: contain;
         background-size: contain;

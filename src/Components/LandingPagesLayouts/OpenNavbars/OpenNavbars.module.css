@@ -45,66 +45,45 @@
     background-color: #2E318D;
 }
 
-
-
-
-
-
-
-
-
 .FootersItems {
-    display: flex;
-    /* Display the two lists in a row */
     gap: 50px;
-    /* Space between the two lists */
-    justify-content: center;
-    /* Center the lists horizontally within the container */
-    align-items: flex-start;
-    /* Align the lists to the top */
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .FootersItemsUL {
     margin: 0;
     padding: 0;
-    list-style: none;
     display: flex;
-    /* Display items inside the list vertically */
-    flex-direction: column;
-    /* Keep the list items in a column inside the first list */
+    list-style: none;
     text-align: center;
-    /* Center the text inside the list */
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .FootersItemsUL2 {
+    gap: 15px;
     margin: 0;
+    display: flex;
     padding: 2rem;
     list-style: none;
     min-width: 550px;
-    position: relative;
     border-radius: 5px;
-    background-color: #2E318D;
-    text-align: center;
-    /* Center the sublist items */
-    display: flex;
     flex-direction: column;
-    /* Keep the list items in a column inside the second list */
-    gap: 10px;
-    /* Space between the items in the second list */
+    align-items: flex-start;
+    background-color: #2E318D;
+    text-decoration: underline solid 5px rgba(255, 255, 255, 0.929);
 }
-
-
-
-
 
 .FooterItemsLI a {
     font-size: 3rem;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 900;
+    line-height: 70px;
     text-decoration: none;
-    line-height: 76.667px;
-    letter-spacing: 0.64px;
+    letter-spacing: 0.14px;
     color: rgba(0, 0, 0, 0.958);
     font-family: "Inter", sans-serif;
 }
@@ -121,5 +100,16 @@
 }
 
 .FooterItemsLI a:hover {
-    color: rgba(255, 255, 255, 0.941);
+    color: rgba(0, 0, 0, 0.958);
+}
+
+.FooterItemsLIB a {
+    font-size: 3rem;
+    cursor: pointer;
+    font-weight: 900;
+    line-height: 70px;
+    color: #2E318D;
+    text-decoration: none;
+    letter-spacing: 0.14px;
+    font-family: "Inter", sans-serif;
 }

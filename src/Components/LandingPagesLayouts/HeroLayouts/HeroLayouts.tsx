@@ -20,18 +20,15 @@ export const HeroLayouts: React.FC = () => {
                     <div className={Styles.HeroLayoutsLists1}>
                         <h1 className={Styles.HeroLayoutH1}>DO YOU NEED</h1>
                     </div>
-
                     <div className={Styles.HeaderLayoutsImageConatiner}>
                         <div className={Styles.HeaderLayoutsImageOverlay} onClick={() => handleNavigation("/IndetifyDesign")}>
                             <img src={Navigate1} alt="Navigate to IndetifyDesign" className={Styles.HeroLayoutImage} />
                             <div className={Styles.HoverBackCard}>Click on me to next</div>
                         </div>
-
                         <div className={Styles.HeaderLayoutsImageOverlay} onClick={() => handleNavigation("/ContentDevelopemts")}>
                             <img src={Navigate2} alt="Navigate to ContentDevelopemts" className={Styles.HeroLayoutImage} />
                             <div className={Styles.HoverBackCard}>Click on me to next</div>
                         </div>
-
                         <div className={Styles.HeaderLayoutsImageOverlay} onClick={() => handleNavigation("/WebDevelopements")}>
                             <img src={Navigate3} alt="Navigate to WebDevelopements" className={Styles.HeroLayoutImage} />
                             <div className={Styles.HoverBackCard}>Click on me to next</div>

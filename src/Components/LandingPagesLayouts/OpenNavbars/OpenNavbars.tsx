@@ -22,22 +22,19 @@ export const OpenNavbars: React.FC<OpenNavbarsProps> = ({ onClose }) => {
                 &times;
             </button>
             <div className={Styles.OpenNavbarsChildOne}>
-
                 <div className={Styles.FootersItems}>
                     <ul className={Styles.FootersItemsUL}>
                         <li className={Styles.FooterItemsLI} onClick={() => handleNavigation("/")}>
                             <a href="#">Home</a>
                         </li>
-                        <li className={Styles.FooterItemsLI}>
+                        <li className={Styles.FooterItemsLIB}>
                             <a href="#">Services</a>
                         </li>
-
-
                         <li className={Styles.FooterItemsLI} onClick={() => handleNavigation("/")}>
-                            <a href="#">About</a>
+                            <a href="#">About Us</a>
                         </li>
                         <li className={Styles.FooterItemsLI} onClick={() => handleNavigation("/WorkComponet")}>
-                            <a href="#">Works</a>
+                            <a href="#">Work</a>
                         </li>
                     </ul>
                 </div>
@@ -45,13 +42,13 @@ export const OpenNavbars: React.FC<OpenNavbarsProps> = ({ onClose }) => {
 
                 <ul className={Styles.FootersItemsUL2}>
                     <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("/IndetifyDesign")}>
-                        <a href="#">Identity Design</a>
+                        <a href="#">identity design</a>
                     </li>
                     <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("ContentDevelopemts")}>
-                        <a href="#">Content Strategy</a>
+                        <a href="#">content strategy</a>
                     </li>
                     <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("/WebDevelopements")}>
-                        <a href="#">Digital Development</a>
+                        <a href="#">digital development</a>
                     </li>
                 </ul>
             </div>
