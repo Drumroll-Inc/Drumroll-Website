@@ -42,13 +42,13 @@ export const OpenNavbars: React.FC<OpenNavbarsProps> = ({ onClose }) => {
 
                 <ul className={Styles.FootersItemsUL2}>
                     <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("/IndetifyDesign")}>
-                        <a href="#">identity design</a>
+                        <a href="#">Identity Design</a>
                     </li>
                     <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("ContentDevelopemts")}>
-                        <a href="#">content strategy</a>
+                        <a href="#">Content Strategy</a>
                     </li>
                     <li className={Styles.FooterItemsLIs} onClick={() => handleNavigation("/WebDevelopements")}>
-                        <a href="#">digital development</a>
+                        <a href="#">Digital Development</a>
                     </li>
                 </ul>
             </div>
